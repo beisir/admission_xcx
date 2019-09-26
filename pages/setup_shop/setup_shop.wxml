@@ -1,0 +1,80 @@
+<view class='setUpShopTop'>
+    <icon></icon>
+    <text>快速建站，生意不受限，客户随时来!</text>
+</view>
+<view class='setUpShopBot'>
+    <view class='setUpShopCon'>
+        <view class='setUpShopList'>
+            <icon class='sIcon1'></icon>
+            <view class='setUpShopRig'>
+                <input type='text'
+                    placeholder-class="phcolor"
+                    data-type="company"
+                    bindblur="blurCompany"
+                    placeholder='请输入您的公司名称'
+                ></input>
+            </view>
+        </view>
+        <view class='setUpShopList'>
+            <icon class='sIcon3'></icon>
+            <view class='setUpShopRig'>
+                <input type='text'
+                    placeholder-class="phcolor"
+                    data-type="phone"
+                    placeholder='请输入您的手机号'
+                    bindblur="blurCompany"
+                ></input>
+            </view>
+
+        </view>
+        <view class='setUpShopList'>
+            <icon class='sIcon4'></icon>
+            <view class='setUpShopRig'>
+                <input type='text' 
+                    placeholder-class="phcolor"
+                    data-type="valicode"
+                    bindblur="blurCompany"
+                    placeholder='请输入图形验证码'
+                    value="{{companyData.valicode}}"
+                ></input>
+                
+            </view>
+            <view class="codeBox">
+                <view class='codeImg' bindtap="getCodeIMG">
+                    <image id="validimg"  
+                        src="https://sso.hc360.com/ValidImage.jsp?seed={{seedIMG.value}}"
+                    ></image>
+                </view>
+            </view>
+        </view>
+
+        <view class='setUpShopList'>
+            <icon class='sIcon5'></icon>
+            <view class='setUpShopRig'>
+                <input type='text'
+                    placeholder-class="phcolor"
+                    placeholder='请输入您的验证码'
+                    data-type="code"
+                    bindblur="blurCompany"
+                ></input>
+            </view>
+            <button type='button' bindtap="getPhoneCode" wx:if="{{time === 60}}">获取验证码</button>
+            <button type='button' class='grayBtn' wx:else>{{time}}秒后可重试</button>
+        </view>
+        <view class='setUpShopList'>
+            <icon class='sIcon6'></icon>
+            <view class='setUpShopRig'>
+                <input type='password'
+                    placeholder-class="phcolor"    
+                    placeholder='请输入密码'
+                    data-type="password"
+                    bindblur="blurCompany"
+                ></input>
+            </view>
+        </view>
+    </view>
+    <button type='submit' bindtap="submitCompany">申请开店</button>
+    <view class='agreementLink'>申请开店表示同意
+        <navigator url="/pages/reg_agreement/reg_agreement">《慧聪网会员注册协议》</navigator>
+    </view>
+</view>

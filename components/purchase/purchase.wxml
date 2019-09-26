@@ -1,0 +1,67 @@
+<!--pages/purchase/purchase.wxml-->
+<view class='purchaseTop'>
+    <view class='purchaseLine'>
+        <text>专业团队帮您找优质卖家</text>
+    </view>
+    <view class='purchaseTopCon'>
+        <view class='purAdvantage'>
+            <icon class='pIcon1'></icon>
+            <view class='pTit'>一小时</view>
+            <text>快速响应</text>
+        </view>
+        <view class='purAdvantage'>
+            <icon class='pIcon2'></icon>
+            <view class='pTit'>享受</view>
+            <text>免费找货</text>
+        </view>
+        <view class='purAdvantage'>
+            <icon class='pIcon3'></icon>
+            <view class='pTit'>撮合</view>
+            <text>优质商品</text>
+        </view>
+        <view class='purAdvantage'>
+            <icon class='pIcon4'></icon>
+            <view class='pTit'>交易</view>
+            <text>满意采购</text>
+        </view>
+    </view>
+</view>
+<view class='purchaseBot'>
+    <view class='purchaseCon'>
+        <view class='purchaseList'>
+            <text>我要采购</text>
+            <view class='purchaseRig'>
+                <input type='text'
+                    value="{{inquiry.businTitle}}"
+                    placeholder-class="phcolor"
+                    bindinput="titleKey"
+                    placeholder='请输入采购产品名称'></input>
+            </view>
+        </view>
+        <view class='purchaseList'>
+            <text>采购数量</text>
+            <view class='purchaseRig num'>
+                <icon class='reduceIco' bindtap="addAndsub" data-sub="sub"></icon>
+                <icon class='plusIco' bindtap="addAndsub" data-sub="add"></icon>
+                <input type='number' 
+                    placeholder-class='phcolor'
+                    value="{{inquiry.inquiryNum}}"
+                    placeholder='0'
+                ></input>
+            </view>
+        </view>
+        <view class='purchaseList'>
+            <text>联系电话</text>
+            <view class='purchaseRig'>
+                <input type='number'
+                    placeholder-class="phcolor"
+                    bindinput="phoneKey"
+                    placeholder='请输入您的手机号'></input>
+            </view>
+        </view>
+    </view>
+    <button type='submit' bindtap="submitComfrim">提交</button>
+</view>
+
+
+<!-- <view class='xjPromptAlert'>请输入采购产品名称</view> -->

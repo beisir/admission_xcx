@@ -1,0 +1,15 @@
+<!--pages/xcx_class2/xcx_class2.wxml-->
+<view class='class2Left'>
+    <block wx:for="{{childs}}" wx:key="{{index}}">
+        <text class="{{active === index ? 'cur': ''}}"
+            data-index="{{index}}"
+            bindtap="toogerActive"
+        >{{item}}</text>
+    </block>
+</view>
+<view class='class2Rig'>
+    <block wx:for="{{finals[active]}}" wx:key="{{index}}">
+        <navigator url="/pages/s_area/s_area?w={{item.name}}&active=0">{{item.name}}</navigator>
+        <!-- <text>{{item.name}}</text> -->
+    </block>
+</view>

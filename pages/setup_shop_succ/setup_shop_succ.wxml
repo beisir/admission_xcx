@@ -1,0 +1,8 @@
+<!--pages/setup_shop_succ/setup_shop_succ.wxml-->
+<view class='succBox'>
+  <view class='succBoxTop'>
+    <icon></icon>
+    <text>申请成功！</text>
+  </view>
+  <view class='succPrompt'>审核通过后会有专属客服知道您开通</view>
+</view>

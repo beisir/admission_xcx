@@ -1,0 +1,75 @@
+.temp11{background: #975c91;}
+.temp11 .proScroll{background:#fff;padding:20rpx 0 20rpx; overflow: hidden; position:relative;border-bottom:1rpx solid #975c91;}
+.temp11 .moreBtn{display: block; margin:20rpx auto 0; width:155rpx;height:36rpx; color: #fff; font-size:22rpx; text-align: center; line-height: 36rpx;background:#af5999;border-radius:30rpx;}
+.temp11 .scrollNum{position:absolute;width:100%;text-align:center;left:0;bottom:20rpx;}
+.temp11 .scrollNum icon{display:inline-block;height:18rpx;width:18rpx;background:#e5e5e5;margin:0 6rpx;border-radius:50%;}
+.temp11 .scrollNum icon.cur{background: #af5999;}
+.temp11 .t1Company{ background: #fff; position: relative;}
+.temp11 .t1Company text{ font-size:28rpx; line-height:50rpx; padding:20rpx 20rpx 20rpx; display: block; color:#666;}
+.temp11 .t1Title,.temp11 .t1Con .title{text-align:center;color:#fff;line-height:60rpx; font-size:34rpx;  width:100%;}
+.temp11 .t1Company .t1Title{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg1.jpg) no-repeat;background-size:750rpx 120rpx;height:104rpx;color:#af5999; padding-top:16rpx;}
+.temp11 .t-proClass{border-top:1rpx solid #af5999;}
+.temp11 .t-proClass .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg2.jpg) no-repeat;background-size:750rpx 120rpx;height:104rpx;color:#af5999; padding-top:16rpx;}
+.temp11 .t-proList .title,.t-proList2 .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg3.jpg) no-repeat;background-size:750rpx 120rpx;height:110rpx;color:#fff; padding-top:10rpx;}
+.temp11 .hotRecom .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg4.jpg) no-repeat;background-size:750rpx 120rpx;height:110rpx;color:#fff; padding-top:10rpx;}
+.temp11 .t-proRank .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg5.jpg) no-repeat;background-size:750rpx 120rpx;height:110rpx;color:#fff; padding-top:10rpx;}
+.temp11 .t-proRank2 .title,.temp11 .t-proRecom .titleCon{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg6.jpg) no-repeat;background-size:750rpx 120rpx;height:110rpx;color:#fff; padding-top:10rpx;}
+.temp11 .t-newsPro .titleCon{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/titBg7.jpg) no-repeat;background-size:750rpx 120rpx;height:110rpx;color:#fff; padding-top:10rpx;}
+.temp11 .t-proRecom .titleCon,.temp11 .t-newsPro .titleCon{line-height:50rpx;}
+.temp11 .hotRecomImg{margin-top:25rpx;}
+.temp11 .proClass{ overflow: hidden;}
+.temp11 .t1Con{position: relative;}
+.temp11 .t1Con .title{ overflow: hidden;top:-34rpx;}
+.temp11 .proClassCon{ overflow: hidden; padding:5rpx 10rpx 20px; background: #fff;}
+.temp11 .pClassLink{width: 223rpx; height: 80rpx;line-height: 80rpx; font-size: 24rpx;color:#fff; float: left; margin: 10rpx; background: #af5999; position: relative;}
+.temp11 .pClassLink::after{ position: absolute; right:10rpx;top:32rpx; content:""; display: block;height:26rpx;width:26rpx;}
+.temp11 .pClassLink text{display: block; text-align: center; line-height: 80rpx; color: #fff; margin: 0 32rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.temp11 .t1ProList{padding:10rpx;background:#fff;overflow:hidden;}
+.temp11 .t1ProCon{float:left;width:345rpx;margin:10rpx;}
+.temp11 .t1ProImg{width:345rpx;height:345rpx;}
+.temp11 .t1ProImg image{width:345rpx;height:345rpx;}
+.temp11 .t1ProBot{width:345rpx;height:70rpx; background:#434343; position: relative;}
+.temp11 .t1ProBot text{ display: block; line-height: 70rpx; color: #fff; position: absolute; left:10px;right:70rpx; font-size: 22rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.temp11 .t1DetailBtn{position: absolute;padding-top:10rpx; height:60rpx;width:60rpx; text-align: center; line-height: 28rpx;right: 0;top:0; font-size: 22rpx; color: #fff; background: #af5999;}
+.temp11 .hotRecomPrompt{ text-align: center; font-size: 28rpx; color: #333; line-height: 80rpx;padding:10rpx 0 15rpx;}
+.temp11 .hotRecom{background:#fff;}
+.temp11 .hotRecomScroll{width:660rpx;height:660rpx; margin: 0 auto; position: relative; border: 15rpx solid #af5999;border-bottom:0;}
+.temp11 .hotRecomImg image{width:660rpx;height:660rpx;}
+.temp11 .hrInfo{position:absolute;bottom: 0;left: 0;width:660rpx;height:86rpx; background: #af5999;}
+.temp11 .hrPrice{ color: #fff; font-size:24rpx; font-weight: bold; line-height: 86rpx; padding-left:10rpx; float: left;}
+.temp11 .hrInfoBtn{float: right; font-size: 26rpx; width: 155rpx;height:50rpx; background: #fff; text-align: center; line-height: 50rpx; color:#af5999; margin:19rpx 0 12px 20rpx;font-weight: bold;}
+.temp11 .hrInfo text{font-size:34rpx;}
+.temp11 .xlRankBox{ height: 470rpx; overflow: hidden; padding:20rpx; background: #fff;}
+.temp11 .xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp11 .xlRankLeft icon{ display: block; position: absolute;width:112rpx;height:75rpx;top:0;left:0;background: url(https://style.org.hc360.com/images/admission_xcx/template_2/ico.png) no-repeat 0 -46rpx; background-size:300rpx 130rpx; z-index: 10;}
+.temp11 .xlRankLeft image{height: 466rpx;width:466rpx;}
+.temp11 .xlRankLeft text,.xlRankRigCon text{ display: block; position: absolute; bottom:0;right: 0; background: rgba(0, 0, 0, 0.5);height:46rpx; z-index: 10;color:#fff; font-size: 26rpx; line-height: 46rpx;padding:0 15rpx;}
+.temp11 .xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp11 .xlRankRig{height: 245rpx;width:225rpx; float: right;}
+.temp11 .xlRankRigCon{margin-bottom: 20rpx;width:225rpx;height:225rpx; position: relative;}
+.temp11 .xlRankRigCon image{height:225rpx;width:225rpx;}
+.temp11 .xlRankRigCon icon{display: block; position: absolute;width:78rpx;height:52rpx;top:0;left:0; z-index: 10;}
+.temp11 .xlRankRigCon icon.top2{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/ico.png) no-repeat -122rpx -46rpx; background-size:300rpx 130rpx;}
+.temp11 .xlRankRigCon icon.top3{background: url(https://style.org.hc360.com/images/admission_xcx/template_2/ico.png) no-repeat -210rpx -46rpx; background-size:300rpx 130rpx;}
+.temp11 .hotRecom2{ overflow: hidden; background: #975c91;}
+.temp11 .hotRecom2List1{overflow:hidden;border:20rpx solid #975c91;border-bottom:1rpx solid #975c91;border-top:0; position: relative; background: #fff}
+.temp11 .hotRecom2List2{overflow:hidden;position: relative;border:20rpx solid #975c91;background: #fff;border-top:0;}
+.temp11 .hotRecom2Img{overflow: hidden; height: 356rpx;width:356rpx; float: left;}
+.temp11 .hotRecom2Img image{width: 356rpx;height:356rpx;}
+.temp11 .hotRecom2Rig{float:left;position:absolute;left:376rpx;top:50rpx;right:20rpx;}
+.temp11 .hotRecom2Tit{ font-size: 34rpx; color: #333; margin-bottom:20rpx; display: none;}
+.temp11 .hotRecom2Name{height:76rpx;line-height:38rpx; font-size:28rpx; color: #666; display: block;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+.temp11 .hotRecom2Price{color:#975c91;font-size:24rpx;font-weight:bold;padding:25rpx 0 45rpx;}
+.temp11 .hotRecom2Price text{font-size: 34rpx;}
+.temp11 .hotRecom2Btn{font-size: 26rpx; width: 155rpx;height:50rpx; background: #975c91; text-align: center; line-height: 50rpx; color:#fff; margin:18rpx 0; font-weight: bold;}
+.temp11 .hotRecom2List2 .hotRecom2Rig{left:20rpx;right:376rpx}
+.temp11 .hotRecom2List2 .hotRecom2Img{float:right;}
+.temp11 .hotRecom3{overflow: hidden; padding: 15rpx 5rpx; background:#fff;}
+.temp11 .hotRecom3Img{width:235rpx; margin:5rpx; float: left;height:235rpx; position: relative;}
+.temp11 .hotRecom3Img image{width:235rpx;height:235rpx;}
+.temp11 .hr3Price{background: #434343;height:45rpx;line-height:45rpx;width:100%; position: absolute; bottom: 0; left: 0; z-index: 5; text-align:center;color:#fff; font-size: 24rpx;}
+.temp11 .hr3Price text{font-size: 34rpx;}
+
+.temp11 .proBotList,.titleCon,.temp11 .tabListBox{background:#975c91;}
+.temp11 .titleCon{text-align: center; color: #fff;}
+.temp11 .proBotCon{box-shadow:0 1px 5rpx 4rpx #975c91;}

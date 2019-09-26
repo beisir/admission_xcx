@@ -1,0 +1,69 @@
+@import "../../html2wxml-template/html2wxml.wxss";
+@import "../../html2wxml-template/highlight-styles/darcula.wxss";
+.container {height:100%;}
+.proImgBox{height:750rpx;width:100%;background: #fff;}
+.proImgBoxImg{width:100%;height:750rpx;}
+.proTit{padding:20rpx 25rpx;border-bottom:20rpx solid #f8f8f8; position: relative; background: #fff;}
+.proTitle{ line-height: 40rp;font-size:30rpx;color:#333;overflow: hidden; display: block;}
+.proPrice{ color: #fd5555; font-size:40rpx;padding:20rpx 0 5rpx;}
+.proPriceText{ font-size: 30rpx;}
+.shareBox{ position: absolute; right:20rpx;top:12rpx; text-align:center;font-size:24rpx;color: #999;width:90rpx;padding-top:55rpx; background:url(https://style.org.hc360.com/images/microMall/program/detailIco.png) no-repeat 24rpx 14rpx;background-size:300rpx 600rpx;}
+.detailCon{ overflow: hidden; padding-bottom:120rpx;background: #f5f5f5;}
+.tabTitCon{line-height:90rpx;border-bottom: 1rpx solid #ddd;}
+.tabTit{width:50%; float: left; font-size: 30rpx; text-align: center;}
+.tabCur{border-bottom: 4rpx solid #fd5555;height:88rpx; display:inline-block;padding:0 18rpx;color:#fd5555;}
+.detailContent{font-size: 14px;overflow: hidden; padding:30rpx 20rpx; background: #f5f5f5;}
+.dBotImg{float:left;width:100%;max-width:750rpx; height: auto;}
+.detailFixed_1{border-top: 1rpx solid #e4e4e4; position: fixed; bottom: 0; background: #fff; width:100%; height:98rpx;}
+.homeBtn,.serviceBtn,.telBtn{ float: left; width:15%; text-align: center; font-size: 22rpx; color: #333; height:98rpx;}
+.homeBtn:before,.serviceBtn:before,.telBtn:before{ content:"";height:60rpx;width:60rpx; display: block; margin: 0 auto;background:url(https://style.org.hc360.com/images/microMall/program/detailIco.png) no-repeat;}
+.gwcBtn{ float: left; font-size:30rpx;background: #fca000; text-align: center;height:98rpx; line-height: 98rpx; color: #fff;width:27.5%;}
+.buyBtn{ float: left; font-size:30rpx;background: #fd5555; text-align: center;height:98rpx; line-height: 98rpx; color: #fff;width:27.5%;}
+.homeBtn:before{ background-position: 6px -72rpx;background-size:300rpx 600rpx;}
+.serviceBtn:before{ background-position: 6px -144rpx;background-size:300rpx 600rpx;}
+.telBtn:before{ background-position:6px -212rpx;background-size:300rpx 600rpx;}
+.detailFont{line-height: 40rpx; font-size:26rpx; color: #333; padding:25rpx; clear: both; overflow:hidden; text-indent: 2em;}
+.parameterBox{padding:25rpx 0; overflow: hidden; font-size: 24rpx; color: #333; line-height: 40rpx;}
+.tr{ border-top: 1rpx solid #ddd; min-height: 80rpx;}
+.th{padding:20rpx 30rpx; float:left; width: 25%;box-sizing: border-box; background: #eee; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.td{ float: left; padding:20rpx 30rpx; width: 75%; box-sizing: border-box; background: #fff;}
+.xjBtn2{float: left; font-size:30rpx;background: #fca000; text-align: center;height:98rpx; line-height: 98rpx; color: #fff;width:55%;}
+.totalBox{ overflow: hidden; font-size: 26rpx; color: #999; padding:20rpx 0;}
+.totalBox text{display: block; float: left;width:40%;}
+.companyInfo{ overflow: hidden; padding:20rpx 30rpx;border-bottom:20rpx solid #f5f5f5;}
+.mallBtn{ overflow: hidden; text-align: center;}
+/* .mallBtn navigator {width:45%;line-height:34px;display:inline-block;margin:0 2%;border-radius:40rpx;border:1px solid #fd5555;font-size:26rpx;color:#fff; background-image: -webkit-linear-gradient(top,#c90201, #fd5454);}
+.mallBtn navigator.allPro{border:1px solid #fd5555;background: #fff;color:#fd5555;}
+.mallBtn navigator::after{border:0;} */
+
+.mallBtn view {width:45%;line-height:34px;display:inline-block;margin:0 2%;border-radius:40rpx;border:1px solid #fd5555;font-size:26rpx;color:#fff; background-image: -webkit-linear-gradient(top,#c90201, #fd5454);}
+.mallBtn view.allPro{border:1px solid #fd5555;background: #fff;color:#fd5555;}
+.mallBtn view::after{border:0;}
+.mallName2{color:#333;font-size:30rpx;line-height:60rpx;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap; position: relative; padding-right: 35rpx;}
+.mallName2 icon{display: block; float: left; width:35rpx;height: 32rpx; position: absolute; top: 17rpx; right:-20 rpx; margin-right: 5rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) 1rpx -276rpx no-repeat; background-size:300rpx 600rpx; margin-top: 5rpx;}
+.mallMmt2{font-size: 26rpx;color:#666; line-height: 40rpx; margin-bottom:30rpx;}
+.mallMmt2 icon{ display: block; float: left; width:35rpx;height: 32rpx; margin-right: 5rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) -1rpx -234rpx no-repeat; background-size:300rpx 600rpx; margin-top: 7rpx;}
+.mallMmt text{ margin-left:15rpx;}
+
+.mallLink,.telLink,.shareLink{ width: 20%; float: left;padding-top:12rpx;height:86rpx;}
+.xjBtn{ width:40%; float: left; font-size:32rpx;line-height:98rpx; background: #fd5555; text-align: center; color: #fff;}
+.mallLink:before,.telLink:before,.shareLink:before{ content:""; display: block; width: 50rpx;height:45rpx; margin: 0 auto 2rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) no-repeat; background-size:300rpx 600rpx;}
+.mallLink::before{ background-position:-233rpx -93rpx;}
+.shareLink::before{background-position:-189rpx -95rpx;}
+.telLink::before{background-position:-43rpx -95rpx;}
+.proImgBox{position: relative;}
+.scrollNum{ position: absolute; bottom: 30rpx; right:30rpx; z-index: 50; font-size: 24rpx; color: #fff; background: rgba(0, 0, 0, 0.6); display: block; height: 40rpx; width:80rpx; text-align: center; line-height:40rpx;}
+.shareLink {
+    position: relative;
+}
+.shareBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.rich-text img {
+    width: 10rpx;
+}

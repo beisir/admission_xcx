@@ -1,0 +1,76 @@
+<!-- <scroll-view class="index-scroll" style="height: 100%;" scroll-y="true"> -->
+<view class='tabListBox'>
+    <view class='companyBox'>
+        <view class='cTit'>公司介绍</view>
+        <view class='companyCon1'>
+            <block wx:for="{{companyData.companyPics}}" wx:key="{{index}}">
+                <view class='companyImg'>
+                    <image mode="aspectFill" src='{{item.companyPicUrl}}'></image>
+                </view>
+            </block>
+            <text>{{companyData.introduce}}</text>
+        </view>
+    </view>
+    <view class='companyBox'>
+        <view class='cTit'>企业资质</view>
+        <view class='companyCon2'>
+            <view class='cName'>
+                <icon></icon>{{companyData.companyInfo.name}}</view>
+            <view class='cAdd'>
+                <icon></icon>所在地区：{{companyData.companyInfo.address}}</view>
+            <view class='cMmt'>
+                <icon></icon>买卖通会员 第{{companyData.companyInfo.mmtAges}}年</view>
+            <view class='cAuth'>
+                <icon></icon>工商注册信息：
+                <block wx:if="{{companyData.companyInfo.authenorg === 1}}">邓白氏认证</block>
+                <block wx:elif="{{companyData.companyInfo.authenorg === 2}}">新华信认证</block>
+                <block wx:elif="{{companyData.companyInfo.authenorg === 3}}">华夏邓白氏认证</block>
+                <block wx:elif="{{companyData.companyInfo.authenorg === 4}}">身份通认证</block>
+            </view>
+        </view>
+    </view>
+    <view class='companyBox'>
+        <view class='cTit'>企业身份认证</view>
+        <view class='companyCon3'>
+            <view class='authList'>
+                <text>公司名称：</text>
+                <view class='authRig'>{{companyData.companyInfo.name}}</view>
+            </view>
+            <view class='authList'>
+                <text>注册号：</text>
+                <view class='authRig'>{{companyData.companyInfo.regcode}}</view>
+            </view>
+            <view class='authList'>
+                <text>注册资本：</text>
+                <view class='authRig'>{{companyData.currencyTypeName}} {{companyData.companyInfo.capitalsum}} 万元</view>
+            </view>
+            <view class='authList'>
+                <text>法定代表</text>
+                <view class='authRig'>{{companyData.corowner}}</view>
+            </view>
+            <view class='authList'>
+                <text>企业类型</text>
+                <view class='authRig'>{{companyData.type}}</view>
+            </view>
+            <view class='authList'>
+                <text>营业期限：</text>
+                <view class='authRig'>自 {{companyData.createDate}}</view>
+            </view>
+            <view class='authList'>
+                <text>经营模式：</text>
+                <view class='authRig'>{{companyData.kind}}</view>
+            </view>
+            <view class='authList'>
+                <text>联系人：</text>
+                <view class='authRig'>{{companyData.companyInfo.contactor}} ({{companyData.companyInfo.duty}})</view>
+            </view>
+        </view>
+    </view>
+    <view class='companyBox'>
+        <view class='cTit'>买卖通证书</view>
+        <view class='companyCon4'>
+            <image src='{{companyData.companyInfo.creditValue.picurl}}'></image>
+        </view>
+    </view>
+</view>
+<!-- </scroll-view> -->

@@ -1,0 +1,131 @@
+.tabListBox {
+    padding-top: 0rpx;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.companyBox, .contactBox {
+    overflow: hidden;
+    background: #fff;
+    margin: 20rpx 20rpx 0 20rpx;
+    border-radius: 15rpx;
+}
+
+.companyBox .cTit, .contactBox .cTit {
+    height: 90rpx;
+    padding: 0 20rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    font-size: 34rpx;
+    color: #333;
+    line-height: 90rpx;
+    font-weight: bold;
+}
+
+.companyCon1 {
+    padding: 30rpx 25rpx;
+    text-align: center;
+}
+
+.companyCon1 .companyImg {
+    height: 135rpx;
+    display: inline-block;
+    width: 210rpx;
+    margin: 0 5rpx;
+}
+
+.companyImg image {
+    width: 210rpx;
+    height: 135rpx;
+}
+
+.companyCon1 text {
+    display: block;
+    text-align: left;
+    line-height: 52rpx;
+    font-size: 28rpx;
+    color: #666;
+    padding: 15rpx 5rpx 0;
+}
+
+.companyCon2, .contactCon1 {
+    padding: 15rpx 30rpx;
+    line-height: 56rpx;
+    color: #333;
+    font-size: 28rpx;
+}
+
+.companyCon2 icon {
+    display: block;
+    float: left;
+    width: 40rpx;
+    height: 38rpx;
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+    background: url(https://style.org.hc360.com/images/admission_xcx/icon.png) 0 -197rpx no-repeat;
+    background-size: 300rpx 600rpx;
+}
+
+.cName icon {
+    background-position: 0 -153rpx;
+}
+
+.cAdd icon {
+    background-position: -40rpx -152rpx;
+}
+
+.cMmt icon {
+    background-position: -86rpx -150rpx;
+}
+
+.cAuth icon {
+    background-position: -136rpx -150rpx;
+}
+
+.companyCon3 {
+    margin: 0 20rpx;
+}
+
+.companyCon3 .authList, .contactCon2 .conList {
+    padding: 24rpx 0;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.authList text, .conList text {
+    display: block;
+    float: left;
+    width: 25%;
+    color: #999;
+}
+
+.conList text {
+    width: 20%;
+}
+
+.authList .authRig, .conList .conListRig {
+    display: block;
+    float: left;
+    width: 75%;
+}
+
+.conList .conListRig {
+    width: 80%;
+}
+
+.authList:last-child, .conList:last-child {
+    border-bottom: 0;
+}
+
+.contactCon2 {
+    margin: 0 30rpx;
+}
+
+.companyCon4, .contactCon3 {
+    margin: 30rpx;
+}
+
+.companyCon4 image {
+    width: 100%;
+}

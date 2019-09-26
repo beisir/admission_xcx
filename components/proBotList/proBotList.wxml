@@ -1,0 +1,19 @@
+<wxs src="../../utils/filter.wxs" module="tools" />
+<view class="proBotList">
+    <block wx:for="{{dataList}}" wx:key="{{index}}">
+        <view class='proBotCon' data-bcid="{{item.bcId || item.bc_id}}" bindtap="jumpPage">
+            <view class='proImgCon'>
+                <image class='proBotImg' 
+                src="https:{{item.smallPicUrl || item.picpath}}"></image>
+            </view>
+            <text class="protil">{{item.title}}</text>
+            <view class="price">
+                <text class='allprice'
+                    wx:if="{{tools.isPrice(item.price || item.pricerange)}}"
+                >￥{{tools.priceFoalt(item.price || item.pricerange, 0)}}.{{tools.priceFoalt(item.price || item.pricerange, 1)}}</text>
+                <text class='allprice' wx:else>面议</text>
+            </view>
+            
+        </view>
+    </block>    
+</view>

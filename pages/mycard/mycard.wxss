@@ -1,0 +1,46 @@
+/* pages/mycard/mycard.wxss */
+.conList{ position: relative;}
+.identity{position: absolute; right:10px; height: 40rpx;top:0; padding-left: 24rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) -261rpx 8rpx no-repeat; background-size:300rpx 600rpx; color:#fd5555;}
+.botCodeBox{padding:50rpx 30rpx 20rpx; /*margin-bottom: 120rpx;*/background-color: #ffffff;}
+.codeImg{width:310rpx;height:310rpx; margin: 0 auto;}
+.codeImg image{width: 310rpx; height: 310rpx;}
+.botCodeBox text{font-size: 26rpx; color:#333;line-height:60rpx; text-align: center; display: block; padding-top: 20rpx;}
+
+.preservaLink,.shareLink,.telLink2{ width:33.3333%; float: left;padding-top:12rpx;height:86rpx;}
+.preservaLink:before,.shareLink:before,.telLink2:before{ content:""; display: block; width: 50rpx;height:45rpx; margin: 0 auto 2rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) no-repeat; background-size:300rpx 600rpx;}
+.preservaLink::before{background-position:-144rpx -95rpx;}
+.shareLink::before{background-position:-189rpx -95rpx;}
+.telLink2::before{background-position:-43rpx -95rpx;}
+.shareLink, .preservaLink {
+    position: relative;
+}
+.shareBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.recommendCon {
+    position:relative;
+    width:40rpx;
+    height:30rpx;
+    background:url(https://style.org.hc360.com/images/microMall/qy/mb1/template1Ico.png) 10rpx -60rpx no-repeat #fff;
+    background-size:25rpx 165rpx;
+    right:0;
+    bottom:0;
+}
+.kefu {
+    text-align: center;
+    
+    font-size: 12px;
+    color: #888;
+    padding-bottom:120rpx;
+    padding-top:16rpx;
+
+}
+.kefu text{
+display: block;
+margin-bottom: 10rpx;
+}

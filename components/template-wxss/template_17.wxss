@@ -1,0 +1,64 @@
+.temp17	.proScroll{background:#fff;padding:20rpx 0 70rpx; overflow: hidden; position:relative}
+.temp17	.moreBtn{display: block; margin:20rpx auto 0; width:155rpx;height:36rpx; color: #509f70; font-size:22rpx; text-align: center; line-height: 36rpx;background:#fff;border-radius:30rpx;}
+.temp17	.scrollNum{position:absolute;width:100%;text-align:center;left:0;bottom:20rpx;}
+.temp17	.scrollNum icon{display:inline-block;height:18rpx;width:18rpx;background:#b2b7c8;margin:0 6rpx;border-radius:50%;}
+.temp17	.scrollNum icon.cur{background: #509f70;}
+.temp17	.t1Company{ background: #fff; position: relative;}
+.temp17	.t1Company text{ font-size:28rpx; line-height:50rpx; padding:20rpx; display: block; color:#0c0c0c;}
+.temp17	.t1Title,temp17 .t1Con .title{text-align:center;color:#509f70;line-height:82rpx; font-size:30rpx; background: url(https://style.org.hc360.com/images/admission_xcx/template_17/titBg.png) center no-repeat #e9e7a8; background-size:750rpx 100rpx;width:100%; font-weight: bold;}
+.temp17	.proClass{ overflow: hidden;}
+.temp17	.t1Con{position: relative;background: #fff;}
+.temp17	.t1Con .title{ overflow: hidden;top:-34rpx; font-weight: bold;padding:25rpx 0  20rpx 10rpx;}
+.temp17	.proClassCon{ overflow: hidden; padding: 15rpx 10rpx; background: #fff;}
+.temp17	.pClassLink{width:33.333%; height: 80rpx;line-height: 80rpx; font-size: 24rpx;color:#536399; float: left; background: #fff;position: relative;margin:10rpx 0;}
+.temp17	.pClassLink::after{ position: absolute; right:10rpx;top:32rpx; content:""; display: block;height:26rpx;width:26rpx;}
+.temp17	.pClassLink text{display: block; text-align: center; line-height: 80rpx; color: #509f70;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;width:90%; margin:0 auto;border:1rpx solid #509f70;}
+.temp17	.t1ProList{padding:10rpx;background:#fff;overflow:hidden;}
+.temp17	.t1ProCon{float:left;width:345rpx;margin:10rpx;}
+.temp17	.t1ProImg{width:345rpx;height:345rpx; overflow: hidden; border-radius:100rpx; display: block;}
+.temp17	.t1ProImg image{width:345rpx;height:345rpx;}
+.temp17	.t1ProBot{width:345rpx;height:70rpx; background:#fff;border:1rpx solid #509f70; position: relative;}
+.temp17	.t1ProBot text{ display: block; line-height: 70rpx; color: #0c0c0c; position: absolute; left:10px;right:70rpx; font-size: 22rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.temp17	.t1DetailBtn{position: absolute;padding-top:10rpx; height:64rpx;width:60rpx; text-align: center; line-height: 28rpx;right:-1rpx;top:-1rpx; font-size: 22rpx; color: #fff; background:#509f70;}
+.temp17	.hotRecomPrompt{ text-align: center; font-size: 28rpx; color:#333;line-height: 80rpx;padding:10rpx 0 15rpx;}
+.temp17	.hotRecomScroll{width:700rpx;height:700rpx; margin: 0 auto; position: relative; border:1rpx solid #e5e5e5;}
+.temp17	.hotRecomImg image{width:700rpx;height:700rpx;}
+.temp17	.hrInfo{position:absolute;bottom: 0;left: 0;width:700rpx;height:86rpx; background: #fff;border-top:1px solid #e5e5e5;}
+.temp17	.hrPrice{ color: #509f70; font-size:24rpx; font-weight: bold; line-height: 86rpx; padding-left:20rpx; float: left;}
+.temp17	.hrInfoBtn{float: right; font-size: 26rpx; width: 155rpx;height:86rpx; background: #509f70; text-align: center; line-height: 86rpx; color:#fff; margin:0;font-weight: bold;}
+.temp17	.hrInfo text{font-size:34rpx;}
+.temp17	.xlRankBox{ height: 470rpx; overflow: hidden; padding:20rpx; background:#fff;}
+.temp17	.xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp17	.xlRankLeft icon{ display: block; position: absolute;width:85rpx;height:134rpx;top:0;right:10rpx;background: url(https://style.org.hc360.com/images/admission_xcx/template_17/rankIco.png) no-repeat 0 0; background-size:354rpx 134rpx; z-index: 10;}
+.temp17	.xlRankLeft image{height:470rpx;width:470rpx;}
+.temp17	.xlRankLeft text,temp17 .xlRankRigCon text{ display: block; position: absolute; bottom:0;right: 0; background: rgba(0, 0, 0, 0.5);height:46rpx; z-index: 10;color:#fff; font-size: 26rpx; line-height: 46rpx;padding:0 15rpx;}
+.temp17	.xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp17	.xlRankRig{width:225rpx; float: right;}
+.temp17	.xlRankRigCon{margin-bottom: 20rpx;width:225rpx;height:225rpx; position: relative;}
+.temp17	.xlRankRigCon image{height:225rpx;width:225rpx;}
+.temp17	.xlRankRigCon icon{display: block; position: absolute;width:85rpx;height:100rpx;top:0;right:10rpx; z-index: 10;}
+.temp17	.xlRankRigCon icon.top2{background: url(https://style.org.hc360.com/images/admission_xcx/template_17/rankIco.png) no-repeat -92rpx 0; background-size:354rpx 134rpx;}
+.temp17	.xlRankRigCon icon.top3{background: url(https://style.org.hc360.com/images/admission_xcx/template_17/rankIco.png) no-repeat -184rpx 0; background-size:354rpx 134rpx;}
+.temp17	.hotRecom2{ overflow: hidden; background: #f8f8f8;padding-bottom: 20rpx;}
+.temp17	.hotRecom2List1{overflow:hidden;border-bottom:1rpx solid #535353; padding:20rpx 20rpx 10rpx; position: relative; margin-bottom: 10rpx;}
+.temp17	.hotRecom2List2{overflow:hidden;padding:0 20rpx 0; position: relative;}
+.temp17	.hotRecom2Img{overflow: hidden; height: 355rpx;width:355rpx; float: left;}
+.temp17	.hotRecom2Img image{width:355rpx;height:355rpx;}
+.temp17	.hotRecom2Rig{float:left;position:absolute;left:375rpx;top:20rpx;right:20rpx;padding-left:20rpx;height:355rpx;}
+.temp17	.hotRecom2Tit{ font-size: 34rpx; color: #333; margin-bottom:20rpx; display: none;}
+.temp17	.hotRecom2Name{height:76rpx;line-height:38rpx; font-size:28rpx; color: #333; display: block;margin-right:20rpx; overflow: hidden;margin-top:50rpx;}
+.temp17	.hotRecom2Price{color:#509f70;font-size:24rpx;font-weight:bold;padding:25rpx 0 35rpx;}
+.temp17	.hotRecom2Price text{font-size: 34rpx;}
+.temp17	.hotRecom2Btn{font-size: 26rpx; width: 155rpx;height:50rpx; background: #509f70; text-align: center; line-height: 50rpx; color:#fff; margin:18rpx 0; font-weight: bold; border: 1rpx solid #509f70; border-radius:5rpx;}
+.temp17	.hotRecom2List2 .hotRecom2Rig{right:20rpx;left:375rpx;top:0;}
+.temp17	.hotRecom2List2 .hotRecom2Img{float:left;}
+.temp17	.hotRecom3{overflow: hidden; padding: 15rpx 5rpx; background:#fff;}
+.temp17	.hotRecom3Img{width:235rpx; margin:7rpx; float: left;height:235rpx; position: relative;}
+.temp17	.hotRecom3Img image{width:235rpx;height:235rpx;}
+.temp17	.hr3Price{background: #509f70;height:45rpx;width:100%; position: absolute; bottom: 0; left: 0; z-index: 5; text-align:center;color:#fff; font-size:24rpx;line-height:45rpx;}
+.temp17	.hr3Price text{font-size:34rpx;}
+.temp17	.hotRecomImg{padding-top:20rpx; background:#fff;}
+.temp17	.tabListBox,temp17 .proBotList{ background:#fff;}
+.temp17	.proBotCon{box-shadow:0;}
+.temp17	.titleCon{text-align:center;color:#509f70;line-height:82rpx; font-size:30rpx; background: url(https://style.org.hc360.com/images/admission_xcx/template_17/titBg.png) center no-repeat #e9e7a8; background-size:750rpx 82rpx;width:100%; font-weight: bold; margin-bottom: 20rpx;padding:0;}
+.temp17	.t1Con.t-proRank2 .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_17/titBg.png) center no-repeat #f8f8f8; background-size:750rpx 100rpx;}

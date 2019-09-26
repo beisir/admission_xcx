@@ -1,0 +1,7 @@
+<import src="../../template/index.wxml" />
+<view class="container-index">
+    <template is="mallHeader" data="{{...companyData}}"></template>
+    <view class='searchClassCon index-content' >
+        <AllGoods allData="{{allData}}" series="{{classOption.seriesid}}"></AllGoods>
+    </view>
+</view>

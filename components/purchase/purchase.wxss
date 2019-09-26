@@ -1,0 +1,25 @@
+/* pages/purchase/purchase.wxss */
+page{background:#f5f5f5;}
+.purchaseTop{margin-bottom:20rpx;background:#fff; padding:35rpx 0; overflow: hidden;}
+.purchaseLine{width:620rpx; margin:0 auto; border-bottom: 2rpx solid #e5e5e5;height:20rpx;}
+.purchaseLine text{ display: block;width:420rpx; margin: 0 auto; text-align: center; background: #fff; line-break: 40rpx; height: 40rpx; font-size:34rpx; color: #fd5555;}
+.purchaseTopCon{padding:50rpx 0 30rpx;}
+.purAdvantage{ float: left;width:100rpx; margin: 0 43rpx; text-align:center;}
+.purAdvantage icon{display: block;width:104rpx;height:104rpx; margin:0 auto;background:url(http://style.org.hc360.com/images/admission_xcx/indexIcon.png) no-repeat; background-size:210rpx 800rpx;}
+.purAdvantage icon.pIcon1{ background-position:0 -141rpx;}
+.purAdvantage icon.pIcon2{ background-position:-108rpx -141rpx;}
+.purAdvantage icon.pIcon3{ background-position:0 -251rpx;}
+.purAdvantage icon.pIcon4{ background-position:-108rpx -251rpx;}
+.pTit{font-size: 34rpx; color:#333; line-height:44rpx; padding-top:10rpx; font-weight: bold;white-space:nowrap;}
+.purAdvantage text{color:#666;font-size:24rpx;display:block;}
+.purchaseBot{padding:30rpx 35rpx;}
+.purchaseCon{overflow:hidden; background: #fff; border-radius: 15rpx;}
+.purchaseList{overflow:hidden;height:90rpx; line-height:90rpx; position: relative;}
+.purchaseList text{display: block; float: left;width:150rpx; text-align: right; font-size: 28rpx; color: #333;line-height:90rpx;}
+.purchaseRig{ height:88rpx; border-bottom:1rpx solid #f0f0f0; position: absolute; top: 0; right:0;left:175rpx; overflow: hidden;}
+.purchaseRig input{width: 100%;height:90rpx; color: #333; font-size: 28rpx;}
+.purchaseBot button{height:84rpx; font-size: 34rpx; color: #fff; background:#fd5555; border: 0; border-radius:60rpx; margin: 70rpx 0 30rpx;}
+.purchaseRig.num input{text-align:center;}
+.purchaseRig.num icon{ display: block; position: absolute;top:20rpx;width:50rpx;height:50rpx;background:url(http://style.org.hc360.com/images/admission_xcx/indexIcon.png) no-repeat #f8f8f8; background-size:210rpx 800rpx;z-index: 500;}
+.purchaseRig.num icon.plusIco{right:30rpx; background-position:-140rpx 14rpx;}
+.purchaseRig.num icon.reduceIco{left:0;background-position:-88rpx 22rpx}

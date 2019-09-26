@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "proBotList": "/components/proBotList/proBotList"
+    }
+}

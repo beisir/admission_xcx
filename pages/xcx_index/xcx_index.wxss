@@ -1,0 +1,30 @@
+/* pages/xcx_index/xcx_index.wxss */
+page{background: #f5f5f5;}
+.bannerBox{ overflow: hidden; position: relative;}
+.bSearchBox{position: absolute;height:60rpx;right:20rpx;left:20rpx;top:20rpx; z-index:5; background:rgba(255,255,255,0.8); border-radius: 30rpx;} 
+.scrollImg{ overflow: hidden;}
+.scrollImg image{width: 100%; height:245rpx;}
+.bSearchBox icon{position: absolute;height:60rpx;width:60rpx;left:0;top:0;background:url(http://style.org.hc360.com/images/admission_xcx/searchIco.png) no-repeat; background-size:60rpx 60rpx;}
+.bSearchBox navigator{padding-left:65rpx;line-height:60rpx;width: 100%; box-sizing:border-box; font-size: 28rpx;color:#666; }
+.tsIndustryBox{overflow:hidden;padding:0 15rpx;}
+.industryTit{ text-align: center;padding:30rpx 0 15rpx;}
+.titTop{ font-size: 34rpx; font-weight:bold; color: #333;}
+.titTop text{color:#fd5555;}
+.titBot{font-size:24rpx; color: #d4d4d4;}
+.navBox2{ overflow: hidden; padding: 0 18rpx;}
+.navList{width:226rpx;height:300rpx;float:left; margin:6rpx; background: #fff; border-radius:20rpx;}
+.navList icon{display: block; margin: 0 auto;height:150rpx;width:150rpx; margin-top: 25rpx; background:url(http://style.org.hc360.com/images/admission_xcx/navIco.png) no-repeat; background-size:470rpx 630rpx; }
+.navTit{ text-align: center; font-size:30rpx; color: #333; font-weight: bold; line-height:60rpx;}
+.navList text{ text-align: center;color: #999; font-size:24rpx; display: block;}
+.navList icon.navIco1{background-position:0 0;}
+.navList icon.navIco2{background-position:-160rpx 0;}
+.navList icon.navIco3{background-position:-320rpx 0;}
+.navList icon.navIco4{background-position:0 -160rpx;}
+.navList icon.navIco5{background-position:-160rpx -160rpx;}
+.navList icon.navIco6{background-position:-320rpx -160rpx;}
+.navList icon.navIco7{background-position:0 -320rpx;}
+.navList icon.navIco8{background-position:-160rpx -320rpx;}
+.navList icon.navIco9{background-position:-320rpx -320rpx;}
+.navList icon.navIco10{background-position:0 -480rpx;}
+.navList icon.navIco11{background-position:-160rpx -480rpx;}
+.navList icon.navIco12{background-position:-320rpx -480rpx;}

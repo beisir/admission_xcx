@@ -1,0 +1,8 @@
+<view class='xcxClassBox'>
+    <block wx:for="{{classList}}" wx:key="{{index}}">
+        <navigator class='classList' url="/pages/xcx_class2/xcx_class2?code={{item.code}}">
+            <icon class='icon{{index + 1}}'></icon>
+            <view class='classListRig'>{{item.text}}</view>
+        </navigator>
+    </block>
+</view>

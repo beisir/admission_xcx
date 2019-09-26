@@ -1,0 +1,147 @@
+<wxs src="../../utils/filter.wxs" module="tools" />
+<view class="search-top" catchtouchmove="ture">
+    <view class="searchBox">
+        <view class='searchCon'>
+            <view class='sIco_p'></view>
+            <input class='searchInput' 
+                placeholder="{{active === '0'? '请输入产品名称': '请输入企业名称'}}"
+                bindconfirm="searchEvent"
+                maxlength="200"
+                value='{{w}}'/>
+        </view>
+    </view>
+
+    <view class='tabTit'>
+        <block wx:for="{{tabLi}}" wx:key="{{index}}">
+            <view wx:if="{{item.flag}}"
+                class="tabLi {{tabLiCur === index ? 'tabCur': ''}}"
+                data-index="{{index}}"
+                bindtap="tabLiActive">
+                {{item.text}} <view wx:if="{{index !== 0}}" class='{{item.icon}}'></view>
+            </view>
+        </block>
+    </view>
+
+    <view class="search-screen {{screen ? 'search-screen_0': ''}}">
+        <view class='address_1' bindtap="sildeDown">
+            <text class='address_1_1'>地区</text>
+            <text class='address_1_2' wx:if="{{parentText || childsText}}">
+                <text>{{parentText}} {{childsText}}</text>
+            </text>
+        </view>
+
+        <view class="address_2 {{screenChild ? 'address_2_0': ''}}">
+            <scroll-view scroll-y="true" style="height: 100%;" class='address_2_left'>
+                <block wx:for="{{addressData}}" 
+                    wx:key="{{item.name}}"
+                    wx:for-index="index">
+                    <block wx:for="{{item.title || []}}" 
+                        wx:for-item="childItem"
+                        wx:for-index="childIndex"
+                        wx:key="{{childItem}}">
+                        <text class="address_2_1 {{(parentindex === index && childIndex === childsindex) ? 'address_L_on': ''}}"
+                            data-parentindex="{{index}}"
+                            data-childsindex="{{childIndex}}"
+                            bindtap="activeLeft"
+                        >{{childItem}}</text>
+                    </block>
+                </block>
+            </scroll-view>
+            <scroll-view scroll-y="true" style="height: 100%;" class='address_2_right'>
+                <block wx:for="{{addressData[parentindex].city[childsindex]}}" wx:key="{{item}}">
+                    <text class="address_2_2 {{index === rightindex ? 'address_R_on':''}}"
+                        data-rightindex="{{index}}"
+                        bindtap="activeRight"
+                    >{{item}}</text>
+                </block>
+                <!-- <text class='address_2_2 address_R_on'>东城区</text> -->
+            </scroll-view>
+        </view>
+
+        <view class='priceBox' wx:if="{{active === '0'}}">
+            <view class='priceTit'>价格区间</view>
+            <view class='priceCon'>
+                <input class="priceInput"
+                    type="digit"
+                    data-type="min"
+                    value="{{min}}"
+                    bindinput="keyPrice"
+                    placeholder="输入价格" />
+                <text class='symbol'>-</text>
+                <input class="priceInput"
+                    type="digit"
+                    data-type="max"
+                    value="{{max}}"
+                    bindinput="keyPrice"               
+                    placeholder="输入价格" />
+            </view>
+        </view>
+
+        <view class='modeBox' wx:if="{{active=== '1'}}">
+            <view class='modeTit'>模式</view>
+            <view class='modeCon'>
+                <block wx:for="{{patternList}}" wx:key="{{item.j}}">
+                    <text data-index="{{index}}"
+                        data-j="{{item.j}}"
+                        bindtap="patternActive"
+                        class="modeTxt {{patternIndex === index ? 'modeCur': ''}}"
+                    >{{item.text}}</text>
+                </block>
+            </view>
+        </view>
+
+
+        <view class='btnBox'>
+            <view class='empty' bindtap="clearBtn">清空</view>
+            <view class='confirm' bindtap="submitBtn">确定</view>
+        </view>
+    </view>
+
+</view>
+
+<view style="padding-bottom: 64rpx;padding-top: 172rpx;">
+    <view class='prolistBox' wx:if="{{active === '0'}}">
+        <block wx:for="{{searchResultInfo}}" wx:key="{{index}}">
+            <navigator class='prolistCon' url="/pages/detail/detail?bcid={{item.searchResultfoId}}">
+                <view class='proImgCon'>
+                    <image class='proImg' src='{{item.searchResultfoImageSmall}}'></image>
+                </view>
+                <view class="proTxt">
+                    <text class="proName">{{item.searchResultfoTitle}}</text>
+                    <text class='comName'>{{item.searchResultfoCompany}}</text>
+                    <view class="priceCon" wx:if="{{(item.searchResultfoUnitPrice * 1)}}">￥
+                        <text class='price'>{{tools.priceFoalt(item.searchResultfoUnitPrice, 0)}}.</text>{{tools.priceFoalt(item.searchResultfoUnitPrice, 1)}}</view>
+                    <view class="priceCon" wx:else><text class='price'>面议</text></view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+
+    <view class='comList' wx:if="{{active === '1'}}">
+        <block wx:for="{{searchResultInfo}}" wx:key="{{index}}">
+            <view class='comInfo'
+                data-pid="{{item.searchResultfoId}}"    
+                bindtap="goShopIndex">
+                <text class='comName'>{{item.searchResultfoCompany}}</text>
+                <text class='model' wx:if="{{item.searchResultfoBm}}">经营模式：{{tools.productType(item.searchResultfoBm)}}</text>
+                <text class='mpro' wx:if="{{item.searchResultfoTp.length}}">主营产品： {{item.searchResultfoTp}}</text>
+                <view class='memberTime' wx:if="{{(item.searchResultfoAs*1) >= 4}}">
+                    <view class='micons'></view> 买卖通
+                    <!-- <text>3</text>年 -->
+                </view>
+                <view class='memberTime' wx:else></view>
+                <view class='region'>
+                    <text>{{tools.Address(item.searchResultfoZone)}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class='tsgBox' wx:if="{{active && !searchResultInfo.length}}">
+        <view class='tsgIcon'></view>
+        <text class='tsgTxt'>对不起没有您搜索的内容</text>
+    </view>
+
+    <view class='loadingBox' wx:if="{{isLoading}}">
+        <image src='{{loadingIMG}}' />正在加载...
+    </view>
+</view>

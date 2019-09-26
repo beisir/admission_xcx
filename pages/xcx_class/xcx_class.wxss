@@ -1,0 +1,27 @@
+/* pages/xcx_class/xcx_class.wxss */
+page{background:#fff;}
+.xcxClassBox{overflow:hidden;}
+.classList{height:90rpx;line-height:90rpx; position:relative;padding-left:30rpx;}
+.icon1,.icon2,.icon3,.icon4,.icon5,.icon6,.icon7,.icon8,.icon9,.icon10,.icon11,.icon12,.icon13,.icon14,.icon15,.icon16,.icon17{display:block;float:left;width:40rpx;height:40rpx;background:url(http://style.org.hc360.com/images/admission_xcx/indexIcon.png) -81rpx -624rpx no-repeat; background-size:210rpx 800rpx; margin:25rpx 0 0;}
+.classListRig{position:absolute;left:85rpx;border-bottom:1rpx solid #f5f5f5; font-size: 30rpx; color: #333;right:0;top:0;height:90rpx;bottom: 90rpx;}
+.classListRig::after{content:""; display:block; height:50rpx;width:50rpx; background:url(http://style.org.hc360.com/images/admission_xcx/indexIcon.png) -81rpx -624rpx no-repeat; background-size:210rpx 800rpx;  position:absolute; right: 5rpx;top: 20rpx;}
+.icon1{background-position:0 -484rpx;}
+.icon2{background-position:-42rpx -487rpx;}
+.icon3{background-position:-87rpx -486rpx;}
+.icon4{background-position:-129rpx -482rpx;}
+.icon5{background-position:-173rpx -487rpx;}
+.icon6{background-position:0 -530rpx;}
+.icon7{background-position:-42rpx -528rpx;}
+.icon8{background-position:-85rpx -527rpx;}
+.icon9{background-position:-125rpx -526rpx;}
+.icon10{background-position:-167rpx -528rpx;}
+.icon11{background-position:1px -572rpx;}
+.icon12{background-position:-39rpx -575rpx;}
+.icon13{background-position:-85rpx -578rpx;}
+.icon14{background-position:-126rpx -577rpx;}
+.icon15{background-position:-167rpx -575rpx;}
+.icon16{background-position:5rpx -620rpx;}
+.icon17{background-position:-36rpx -626rpx;height:42rpx;}
+
+
+

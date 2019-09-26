@@ -1,0 +1,49 @@
+.tabListBox {
+    /* padding-bottom: 140rpx; */
+    padding-top: 0rpx;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.allProTit {
+    overflow: hidden;
+    padding: 24rpx 0;
+    background: #fff;
+    height: 40rpx;
+    margin-bottom: 20rpx;
+}
+
+.allProTit .proTit {
+    height: 40rpx;
+    width: 50%;
+    float: left;
+    border-left: 1rpx solid #e5e5e5;
+    margin-left: -1rpx;
+    text-align: center;
+    font-size: 32rpx;
+    color: #666;
+}
+
+.proTit.cur {
+    color: #fd5555;
+}
+
+.proTit icon {
+    display: inline-block;
+    width: 18rpx;
+    height: 28rpx;
+    background: url(https://style.org.hc360.com/images/admission_xcx/icon.png) 0 -197rpx no-repeat;
+    background-size: 300rpx 600rpx;
+    margin-left: 5rpx;
+    vertical-align: middle;
+}
+
+.proTit .up {
+    background-position: -20rpx -197rpx;
+}
+
+.proTit .down {
+    background-position: -41rpx -197rpx;
+}
+.loadingBox{height: 32rpx; text-align: center; font-size: 22rpx; color: #999; line-break: 30rpx;}
+.loadingBox image{height:32rpx;width: 32rpx; margin:-2rpx 10rpx 0 0; vertical-align: middle;}

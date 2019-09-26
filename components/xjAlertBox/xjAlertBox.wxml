@@ -1,0 +1,36 @@
+<view class="xjAlertBox" wx:if="{{aniStyle}}" catchtouchmove="ture">
+    <view class="xjAlertBoxCon {{aniStyle ? 'slideup': ''}}">
+        <view class="xjTitle">请供应商联系我</view>
+        <icon class="xjCloseBtn" bindtap="closeFn">×</icon>
+        <view class="xjList">
+            <text class="xjAlertLeft">{{defaultData[referrer].input}}</text>
+            <view class="xjAlertRig">
+                <input type="number" 
+                    placeholder-class="phcolor"
+                    data-reffer="telPhone"
+                    bindinput="blurKey"
+                    maxlength="11"
+                    placeholder="{{defaultData[referrer].inputHolder}}" />
+            </view>
+        </view>
+        <view class="xjList">
+            <text class="xjAlertLeft">{{defaultData[referrer].tarea}}</text>
+            <view class="xjAlertRig">
+                <textarea type="text"
+                    fixed="true"
+                    value="{{inquiryParamVO.businTitle}}"
+                    data-reffer="businTitle"
+                    bindinput="blurKey"
+                    placeholder-class="phcolor"
+                    placeholder="{{defaultData[referrer].tareaHolder}}"    
+                ></textarea>
+            </view>
+            <!-- <view class="xjAlertRig">
+                
+            </view> -->
+        </view>
+        <view class="xjAlertBtn">
+            <button type="button" bindtap="submitAlert">提 交</button>
+        </view>
+    </view>
+</view>

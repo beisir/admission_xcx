@@ -1,0 +1,33 @@
+page {height:100%;width:100%;background:#fff;}
+.tabBox{height:84rpx;text-align:center;padding:0 8%;background-color: #fff;position: relative;}
+.tabTxt{width:50%;line-height:80rpx;font-size:32rpx;color:#666;border-bottom:4rpx solid #fff;text-align:center;display:inline-block;}
+.tabCur{/*border-bottom:4rpx solid #fd5555;*/color:#fd5555;}
+
+.searchBox_2{clear:both;height:140rpx;background:#f9f9f9;border-top:1rpx solid #f3f3f3;}
+.searchCon_2{margin:40rpx 20rpx;}
+.search{float:left;width:80%;height:60rpx;line-height:60rpx;background:#fff;border-radius:40rpx;position:relative;}
+.sIcon{width:28rpx;height:28rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_9.png) no-repeat;background-size:28rpx 28rpx;position:absolute;left:30rpx;top:16rpx;}
+.sInput2{position:absolute;left:70rpx;right:70rpx;font-size:28rpx;color:#999;height:60rpx;line-height:60rpx;}
+.resetBtn{float:right;width:16%;height:60rpx;line-height:60rpx;font-size:28rpx;color:#fff;border:0;background:#fd5555;text-align:center;border-radius:40rpx;display:block;}
+
+
+.sWordBox{clear:both;}
+.swordTit{height:80rpx;padding:0 20rpx;position:relative;}
+.title{font-size:28rpx;color:#333;font-weight:600;line-height:80rxp;}
+.delBtn{width:38rpx;height:40rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_13.png) no-repeat;background-size:38rpx;height:40rpx;display:block;position:absolute;right:20rpx;top:20rpx;}
+.swordCon{clear:both;padding:0 10rpx;}
+.swordTxt{display:inline-block;max-width:715rpx;height:60rpx;line-height:60rpx;background:#f5f5f5;padding:0 30rpx;font-size:24rpx;color:#666;border-radius:30rpx;box-sizing:border-box;margin:10rpx;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+
+.tsgBox{clear:both;text-align:center;}
+.tsgIcon{width:169rpx;height:168rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_7.jpg) no-repeat;background-size:169rpx 168rpx;margin:115rpx auto 0;display:block;}
+.tsgTxt{text-align:center;font-size:24rpx;color:#666;line-height:50rpx;display:block;}
+
+.tabtraslate {
+    position: absolute;
+    width: 42%;
+    height: 6rpx;
+    bottom: 0;
+    background-color: #fd5555;
+    transition: transform .3s;
+}
+.hover-class{background: #eee;}

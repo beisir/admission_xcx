@@ -1,0 +1,74 @@
+.temp16	page{background: #fff;}
+.temp16	.proScroll{background:#fff;padding:20rpx 0 70rpx; overflow: hidden; position:relative;}
+.temp16	.moreBtn{display: block; margin:20rpx auto 0; width:155rpx;height:36rpx; color: #fff; font-size:22rpx; text-align: center; line-height: 36rpx;background:#ff9f91;border-radius:30rpx;}
+.temp16	.scrollNum{position:absolute;width:100%;text-align:center;left:0;bottom:20rpx;}
+.temp16	.scrollNum icon{display:inline-block;height:18rpx;width:18rpx;background:#e5e5e5;margin:0 6rpx;border-radius:50%;}
+.temp16	.scrollNum icon.cur{background: #ff9f91;}
+.temp16	.t1Company{ background: #fff; position: relative;}
+.temp16	.t1Company text{ font-size:28rpx; line-height:50rpx; padding:35rpx 20rpx; display: block; color:#666;}
+.temp16	.t1Title,.temp16 .t1Con .title{text-align:left;color:#ff9e93;line-height:60rpx; font-size:34rpx; padding-left:20rpx;padding-bottom:18rpx;}
+.temp16	.t1Company .t1Title{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg1.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;font-weight: bold;}
+.temp16	.t-proClass .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg2.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.t-proList .title,.temp16 .t-proList2 .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg3.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.hotRecom .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg4.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.t-proRank .title{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg5.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.t-proRank2 .title,.temp16 .t-proRecom .titleCon{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg6.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.t-newsPro .titleCon{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/titBg7.jpg) no-repeat;background-size:750rpx 78rpx;height:60rpx;color:#ff9e93;}
+.temp16	.t-proRecom .titleCon,.temp16 .t-newsPro .titleCon{line-height:60rpx;}
+.temp16	.hotRecomImg{margin:15rpx 0 20rpx; background: #ff9f91;}
+.temp16	.proClass{ overflow: hidden;}
+.temp16	.t1Con{position: relative;}
+.temp16	.t1Con .title{ overflow: hidden;top:-34rpx; font-weight: bold;}
+.temp16	.proClassCon{ overflow: hidden; padding:30rpx 10rpx; background: #fff;}
+.temp16	.pClassLink{width: 223rpx; height: 80rpx;line-height: 80rpx; font-size: 24rpx;color:#fff; float: left; margin: 10rpx; background: #ff9f91; position: relative;}
+.temp16	.pClassLink::after{ position: absolute; right:10rpx;top:32rpx; content:""; display: block;height:26rpx;width:26rpx;}
+.temp16	.pClassLink text{display: block; text-align: center; line-height: 80rpx; color: #fff; margin: 0 32rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.temp16	.t1ProList{padding:10rpx 10rpx 30rpx;background:#fff;overflow:hidden;}
+.temp16	.t1ProCon{float:left;width:345rpx;margin:10rpx;}
+.temp16	.t1ProImg{width:345rpx;height:345rpx;}
+.temp16	.t1ProImg image{width:345rpx;height:345rpx;}
+.temp16	.t1ProBot{width:345rpx;height:70rpx; background:#fff; position: relative;border:1rpx solid #ff9e93;}
+.temp16	.t1ProBot text{ display: block; line-height: 70rpx; color: #ff9e93; position: absolute; left:10px;right:70rpx; font-size: 22rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.temp16	.t1DetailBtn{position: absolute;padding-top:10rpx; height:60rpx;width:60rpx; text-align: center; line-height: 28rpx;right: 0;top:0; font-size: 22rpx; color: #fff; background: #ff9e93;}
+.temp16	.hotRecomPrompt{ text-align: center; font-size: 28rpx; color: #fff; line-height: 80rpx;padding:10rpx 0 15rpx;}
+.temp16	.hotRecom{background:#fff;}
+.temp16	.hotRecomScroll{width:710rpx;height:710rpx; margin: 0 auto; position: relative;border-bottom:0;padding-top:20rpx;}
+.temp16	.hotRecomImg image{width:710rpx;height:710rpx;}
+.temp16	.hrInfo{position:absolute;bottom: 0;left: 0;width:710rpx;height:86rpx; background: #fff;border-top: 1rpx solid #484c58;}
+.temp16	.hrPrice{ color: #ff9e93; font-size:24rpx; font-weight: bold; line-height: 86rpx; padding-left:10rpx; float: left;}
+.temp16	.hrInfoBtn{float: right; font-size: 26rpx; width: 155rpx;height:50rpx; background: #fff; text-align: center; line-height: 50rpx; color:#333; margin:19rpx 0 12px 20rpx;font-weight: bold;}
+.temp16	.hrInfo text{font-size:34rpx;}
+.temp16	.xlRankBox{ height: 470rpx; overflow: hidden; padding:20rpx; background: #fff;}
+.temp16	.xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp16	.xlRankLeft icon{ display: block; position: absolute;width:85rpx;height:134rpx;top:0;right:15rpx;background: url(https://style.org.hc360.com/images/admission_xcx/template_16/rankIco.png) no-repeat 0 0; background-size:354rpx 134rpx; z-index: 10;}
+.temp16	.xlRankLeft image{height: 466rpx;width:466rpx;}
+.temp16	.xlRankLeft text,.temp16 .xlRankRigCon text{ display: block; position: absolute; bottom:0;right: 0; background: rgba(0, 0, 0, 0.5);height:46rpx; z-index: 10;color:#fff; font-size: 26rpx; line-height: 46rpx;padding:0 15rpx;}
+.temp16	.xlRankLeft{height:470rpx;width:470rpx; float: left;position: relative;}
+.temp16	.xlRankRig{width:225rpx; float: right;}
+.temp16	.xlRankRigCon{margin-bottom: 20rpx;width:225rpx;height:225rpx; position: relative;}
+.temp16	.xlRankRigCon image{height:225rpx;width:225rpx;}
+.temp16	.xlRankRigCon icon{display: block; position: absolute;width:85rpx;height:100rpx;top:0;right:10rpx; z-index: 10;}
+.temp16	.xlRankRigCon icon.top2{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/rankIco.png) no-repeat -92rpx 0; background-size:354rpx 134rpx;}
+.temp16	.xlRankRigCon icon.top3{background: url(https://style.org.hc360.com/images/admission_xcx/template_16/rankIco.png) no-repeat -184rpx 0; background-size:354rpx 134rpx;}
+.temp16	.hotRecom2{ overflow: hidden; background: #975c91;}
+.temp16	.hotRecom2List1{overflow:hidden;padding:20rpx 20rpx 10rpx;border-bottom:1rpx solid #545454;border-top:0; position: relative; background:#fff}
+.temp16	.hotRecom2List2{overflow:hidden;position: relative;padding:10rpx 20rpx 30rpx;background: #fff;}
+.temp16	.hotRecom2Img{overflow: hidden; height: 356rpx;width:356rpx; float: left;}
+.temp16	.hotRecom2Img image{width: 356rpx;height:356rpx;}
+.temp16	.hotRecom2Rig{float:left;position:absolute;left:396rpx;top:50rpx;right:20rpx;}
+.temp16	.hotRecom2Tit{ font-size: 34rpx; color: #333; margin-bottom:20rpx; display: none;}
+.temp16	.hotRecom2Name{height:76rpx;line-height:38rpx; font-size:28rpx; color: #666; display: block; overflow: hidden;}
+.temp16	.hotRecom2Price{color:#ff9e93;font-size:24rpx;font-weight:bold;padding:25rpx 0 45rpx;}
+.temp16	.hotRecom2Price text{font-size: 34rpx;}
+.temp16	.hotRecom2Btn{font-size: 26rpx; width:200rpx;height:60rpx; background: #ff9e93; text-align: center; line-height: 60rpx; color:#fff; margin:18rpx 0; font-weight: bold;}
+.temp16	.hotRecom2List2 .hotRecom2Rig{right:20rpx;left:396rpx}
+.temp16	.hotRecom2List2 .hotRecom2Img{float:left;}
+.temp16	.hotRecom3{overflow: hidden; padding: 15rpx 5rpx; background:#fff;}
+.temp16	.hotRecom3Img{width:235rpx; margin:7rpx; float: left;height:235rpx; position: relative;}
+.temp16	.hotRecom3Img image{width:235rpx;height:235rpx;}
+.temp16	.hr3Price{background: #434343;height:45rpx;width:100%; position: absolute; bottom: 0; left: 0; z-index: 5; text-align:center;color:#fff; font-size: 24rpx;}
+.temp16	.hr3Price text{font-size: 34rpx;}
+.temp16	.proBotList,.temp16 .titleCon,.temp16 .tabListBox{background:#fff;}
+.temp16	.proBotList{margin-top: 20rpx; overflow: inherit;}
+.temp16	.titleCon{text-align:left; color: #fff;}
+.temp16	.proBotCon{box-shadow:0 1px 5rpx 4rpx #ddd;}

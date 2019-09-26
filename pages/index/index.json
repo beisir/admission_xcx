@@ -1,0 +1,15 @@
+{
+    "usingComponents": {
+        "proBotList": "/components/proBotList/proBotList",
+        "footerNav": "/components/footerNav/footerNav",
+        "xjAlertBox": "/components/xjAlertBox/xjAlertBox",
+        "AhomePage": "/components/AhomePage/homePage",
+        "AllGoods": "/components/AllGoods/allGoods",
+        "Acompany": "/components/Acompany/company",
+        "Acontactus": "/components/Acontactus/contactus"
+    },
+    "componentGenerics": {
+        "selectable": true
+    },
+    "navigationBarBackgroundColor": "#fd5555"
+}

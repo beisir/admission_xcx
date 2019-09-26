@@ -1,0 +1,52 @@
+<import src="../../template/index.wxml" />
+<template is="mallHeader" data="{{...companyData}}"></template>
+<!--我的名片-->
+<view class='myCardBox'>
+    <view class='contactBox'>
+        <view class='contactCon2'>
+            <view class='conList'>
+                <text>联系人：</text>
+                <view class='conListRig'> {{companyData.companyInfo.contactor}}
+                    <view class='identity'>{{companyData.companyInfo.duty}}</view>
+                </view>
+            </view>
+            <view class='conList' 
+                wx:if="{{companyData.companyInfo.mp}}" bindtap="callLink" data-tel="{{companyData.companyInfo.mp}}">
+                <text>手机：</text>
+                <view class='conListRig' style="color: blue;">
+                    {{companyData.companyInfo.mp}}
+                </view>
+            </view>
+            <view class='conList'>
+                <text>邮箱：</text>
+                <view class='conListRig'>{{companyData.companyInfo.email || '暂无'}}</view>
+            </view>
+            <view class='conList'>
+                <text>地址：</text>
+                <navigator class="conListRig"
+                    url="/pages/map-page/map-page?accbank={{companyData.companyInfo.accbank || ''}}&address={{companyData.companyInfo.regaddress || ''}}"
+                >{{companyData.companyInfo.regaddress}}<icon class="recommendCon"></icon></navigator>
+                <!-- <view class='conListRig'>{{companyData.companyInfo.regaddress}}</view> -->
+            </view>
+        </view>
+    </view>
+</view>
+<view class='botCodeBox' bindtap="longTapEvent">
+    <view class='codeImg'>
+        <image src='{{IMG_URL}}'></image>
+    </view>
+    <text>微信扫一扫或长按识别二维码快速访问名片</text>
+</view>
+<view class="kefu">
+    <text>由慧聪网提供技术支持服务</text>
+    <text>客服电话：400-6360-888</text>
+</view> 
+<!--底部浮动-->
+<view class='botFixed2'>
+    <view class='shareLink'>分享名片
+        <button class="shareBox" open-type="share"></button>
+    </view>
+    <view class='telLink2' bindtap="callLink" data-tel="{{companyData.companyInfo.mp}}">拨打电话</view>
+    <view class='preservaLink' wx:if="{{!isLoad}}" bindtap="saveImgToPhotosAlbumTap">保存本地</view>
+    <view class='preservaLink' wx:else>保存本地<button class="shareBox" open-type="openSetting" bindopensetting="getauthImg"></button></view>
+</view>

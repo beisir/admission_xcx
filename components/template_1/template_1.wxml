@@ -1,0 +1,14 @@
+<wxs src="../../utils/filter.wxs" module="tools" />
+<import src="../../template/template_1.wxml" />
+<view class='tabListBox temp{{templateId}}'>
+    <block wx:for="{{dataArray}}"
+        wx:for-index="key"   
+        wx:key="{{key}}">
+		
+		<template wx:if="{{item.type && tools.isLength(item.renderData, item.type)}}" 
+			is="{{item.type}}"
+			data="{{moduleData: item.renderData,templateId:templateId, styleId:styleId, proderid: pid, config: templateConfig[templateId]}}"
+		></template>
+		<template wx:else is="{{item.type}}" data="{{moduleData: item.renderData,templateId:templateId, styleId:styleId}}"></template>
+    </block>
+</view>

@@ -1,0 +1,217 @@
+<wxs src="../utils/filter.wxs" module="tools" />
+<!-- banner -->
+<template name="banner">
+    <view class='bannerBox' style="height: 700rpx;">
+        <swiper style="height: 100%;">
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <swiper-item>
+                    <view style="height: 100%;" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                        <image style="height: 100%;" src='{{tools.isIMGHTTP(item.url)}}'></image>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</template>
+
+<!-- 三个一组的轮播图 -->
+<template name="swiperThree">
+    <view class='proScroll swiperThree'>
+        <view class='proScrollCon' style="height: 210px;">
+            <swiper style="height: 100%;"
+                class="swiper-box"
+                indicator-dots="{{(moduleData && moduleData.length>1)?true:false}}"
+                indicator-color="{{config.color}}"
+                indicator-active-color="{{config.activeColor}}"
+                skip-hidden-item-layout="true"
+                display-multiple-items="1">
+                <!-- 
+				display-multiple-items="3">
+				<block wx:for="{{tools.concatedArr(moduleData)}}" wx:key="{{index}}">
+                    <swiper-item>
+                        <view class="proScrollList" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                            <image style="width: 100%;" src='{{tools.isIMGHTTP(item.url)}}'></image>
+                                <text>{{item.title}}</text>
+                            <view class='moreBtn'>MORE</view>
+                        </view> 
+                    </swiper-item>
+				</block> 
+				-->
+                <block wx:for="{{moduleData}}" wx:key="{{index}}"  wx:if="{{moduleData && moduleData.length>0}}">
+                    <swiper-item class="{{moduleData.length==1?'justOneSwiperItem':''}}">
+						<block wx:for="{{item}}" wx:for-index="idx" wx:key="{{idx}}" wx:for-item="subItem" wx:if="{{item && item.length>0}}">
+							<view class="proScrollList item-{{(item.length==1) ? '1': ((item.length==2)? '2' : '3')}}" data-bcid="{{subItem.bc_id}}" bindtap="goDetailPage">
+								<image style="width: 100%;" src='{{tools.isIMGHTTP(subItem.url)}}'></image>
+									<text>{{subItem.title}}</text>
+								<view class='moreBtn'>MORE</view>
+							</view> 
+                        </block> 
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <!-- <view class='scrollNum'>
+            <icon class='cur'></icon>
+            <icon></icon>
+            <icon></icon>
+        </view> -->
+    </view>
+</template>
+    
+<template name="compInfo">
+    <view class='t1Company'>
+        <view class='t1Title'>公司介绍</view>
+        <text>{{moduleData}}</text>
+    </view>
+</template>
+
+
+<template name="prodSeries">
+    <!--产品分类-->
+    <view class="t1Con {{config.serveisClass ? config.serveisClass : ''}}">
+        <view class='title'>产品分类</view>
+        <view class='proClassCon'>
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <navigator wx:if="{{item.seriesid && item.seriesid.length > 0 }}" class="pClassLink" bindtap=""
+                    url="/pages/searchList/searchList?pid={{proderid}}&seriesid={{item.seriesid}}">
+                    <text>{{item.seriesName}}</text>
+                </navigator>
+				<view wx:else class="pClassLink">
+					<text>{{item.seriesName}}</text>
+				</view>
+            </block>
+        </view>
+    </view>
+</template>
+
+<template name="prodList">
+    <!--产品列表-->
+    <view class="t1Con {{config.proList ? config.proList: ''}}">
+        <view class='title'>产品列表</view>
+        <view class='t1ProList'>
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <view class="t1ProCon" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                    <view class='t1ProImg'>
+                        <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                    </view>
+                    <view class='t1ProBot'>
+                        <text>{{item.title}}</text>
+                        <view class='t1DetailBtn'>查看详情</view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>
+
+
+
+<template name="hotRecom">
+    <!--热销推荐-->
+    <view class='t1Con hotRecom'>
+        <view class='title'>热销推荐</view>
+        <view class='hotRecomImg' style="height: 704rpx;">
+            <swiper style="height: 100%;">
+                <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                    <swiper-item>
+                        <view class="hotRecomScroll" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                            <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                            <view class='hrInfo'>
+                                <view class='hrPrice'>
+									<text wx:if="{{tools.isPrice(item.pricel)}}">{{item.pricel}}</text>
+									<text wx:else>面议</text>
+                                </view>
+                                <view class='hrInfoBtn'>查看详情</view>
+                            </view>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class='hotRecomPrompt' wx:if="{{moduleData.length > 1}}">
+            <text decode="{{true}}">&lt;</text> 左右滑动更多
+            <text decode="{{true}}">&gt;</text>
+        </view>
+    </view>
+</template>
+
+<template name="proRank">
+    <!--销量排行-->
+    <view class="t1Con {{config.proRank ? config.proRank : ''}}">
+        <view class='title'>销量排行</view>
+        <view class='xlRankBox'>
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <block wx:if="{{index === 0}}">
+                    <view class="xlRankLeft" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                        <icon></icon>
+                        <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                        <text wx:if="{{tools.isPrice(item.pricel)}}">{{item.pricel}}</text>
+						<text wx:else>面议</text>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view class="xlRankRig" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                        <view class='xlRankRigCon'>
+                            <icon class='top{{index + 1}}'></icon>
+                            <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                            <text wx:if="{{tools.isPrice(item.pricel)}}">{{item.pricel}}</text>
+							<text wx:else>面议</text>
+                        </view>
+                    </view>
+                </block>
+            </block>
+        </view>
+    </view>
+</template>
+
+<template name="hotRecom2">
+    <!--热销推荐2-->
+    <view class="t1Con {{config.proRank2 ? config.proRank2 : ''}}">
+        <view class='title'>热销推荐</view>
+        <view class='hotRecom2'>
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <view class="hotRecom2List{{index + 1}}" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                    <block wx:if="{{index === 1}}">
+                        <view class='hotRecom2Img'>
+                            <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                        </view>
+                        <view class='hotRecom2Rig'>
+                            <view class='hotRecom2Tit'>热销推荐</view>
+                            <text class='hotRecom2Name'>{{item.title}}</text>
+							<view class='hotRecom2Price' wx:if="{{tools.isPrice(item.pricel)}}" >{{item.pricel}}</view>
+							<view class='hotRecom2Price' wx:else>面议</view>
+                            <view class='hotRecom2Btn'>查看详情</view>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <view class='hotRecom2Img'>
+                            <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+                        </view>
+                        <view class='hotRecom2Rig'>
+                            <view class='hotRecom2Tit'>热销推荐</view>
+                            <text class='hotRecom2Name'>{{item.title}}</text>
+                            <view class='hotRecom2Price' wx:if="{{tools.isPrice(item.pricel)}}" >{{item.pricel}}</view>
+							<view class='hotRecom2Price' wx:else>面议</view>
+                            <view class='hotRecom2Btn'>查看详情</view>
+                        </view>
+                    </block>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>
+<template name="proList2"> 
+    <!--产品列表-->
+    <view class="t1Con {{config.proList2 ? config.proList2: ''}}">
+        <view class='title'>产品列表</view>
+        <view class='hotRecom3'>
+            <block wx:for="{{moduleData}}" wx:key="{{index}}">
+                <view class="hotRecom3Img" data-bcid="{{item.bc_id}}" bindtap="goDetailPage">
+                    <image src='{{tools.isIMGHTTP(item.url)}}'></image>
+					<view class='hr3Price' wx:if="{{tools.isPrice(item.pricel)}}" >{{item.pricel}}</view>
+					<view class='hr3Price' wx:else>面议</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</template>

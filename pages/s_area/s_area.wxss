@@ -1,0 +1,96 @@
+@import "./animate.wxss";
+page {
+    height:100%;
+    width:100%;
+    background:#fff;
+}
+.search-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+  /* 搜索 */
+.searchBox{width:100%;height:60rpx;padding:20rpx 0 0;background:#f9f9f9;}
+.searchCon{height:60rpx;line-height:60rpx;background:#fff;border-radius:40rpx;margin:0 20rpx;position:relative;}
+.sIco_p{width:32rpx;height:35rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_1.png) no-repeat;background-size:32rpx 35rpx;position:absolute;left:30rpx;top:14rpx;}
+.sIco_c{width:40rpx;height:31rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_6.png) no-repeat;background-size:40rpx 31rpx;position:absolute;left:30rpx;top:14rpx;}
+.searchInput{height:60rpx;line-height:60rpx;position:absolute;left:70rpx;right:70rpx;text-align:center;font-size:28rpx;color:#999;}
+
+/* 搜索Tab */
+.tabTit{clear:both;height:90rpx;background:#f9f9f9;border-bottom:1rpx solid #f3f3f3;padding:0 60rpx;display: flex;justify-content: space-around;}
+.tabLi{float:left;width:33.3%;font-size:32rpx;color:#666;line-height:90rpx;text-align:center;display:block;}
+.tabCur{color:#fd5555;}
+.curIco{width:15rpx;height:10rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_4.png) no-repeat;background-size:15rpx 10rpx;display:inline-block;vertical-align: middle;}
+.tabIco{width:15rpx;height:10rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_3.png) no-repeat;background-size:15rpx 10rpx;display:inline-block;vertical-align: middle;}
+.picon{width:16rpx;height:25rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_10.png) no-repeat;background-size:16rpx 25rpx;display:inline-block;vertical-align: middle;}
+.picoUp{width:16rpx;height:25rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_11.png) no-repeat;background-size:16rpx 25rpx;display:inline-block;vertical-align: middle;}
+.picoDown{width:16rpx;height:25rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_12.png) no-repeat;background-size:16rpx 25rpx;display:inline-block;vertical-align: middle;}
+
+.address_1{clear:both;height:90rpx;padding:0 20rpx;text-align:left;background-color: #fff;}
+.address_1_1{line-height:90rpx;font-size:28rpx;color:#666;}
+.address_1_2{height:38rpx;line-height:38rpx;border:1rpx solid #fd5555;font-size:24rpx;color:#fd5555;padding:0 10rpx;display:inline-block;border-radius:10rpx;margin:0 0 0 15rpx; vertical-align: middle;}
+.address_1_3{padding-left:8rpx;}
+
+.address_2{clear:both;height:360rpx;border-top:1rpx solid #f5f5f5;border-bottom:1rpx solid #f5f5f5;overflow:hidden;
+transition: height .6s;background-color: #fff;
+}
+.address_2_left{float:left;width:250rpx;}
+.address_2_1{clear:both;width:200rpx;height:91rpx;line-height:90rpx;font-size:24rpx;color:#666;padding:0 20rpx;background:#f5f5f5;display:block;}
+.address_L_on{background:#fff;color:#fd5555;}
+.address_2_right{float:right;width:500rpx;height:360rpx; overflow-y:auto;background-color: #fff;}
+.address_2_2{width:80%;padding:0 10%;line-height:90rpx;font-size:24rpx;color:#666;display:block;}
+.address_R_on{color:#fd5555;}
+.address_2_0 {height: 0;}
+
+.priceBox{clear:both;padding:10rpx 20rpx;overflow:hidden;background-color: #fff;}
+.priceTit{height:60rpx;line-height:60rpx;font-size:28rpx;color:#666;padding:10rpx 0;}
+.priceCon{clear:both;}
+input.priceInput{float:left;width:44%;height:64rpx;border:1rpx solid #eee;text-align:center;color:#cbcbcb;font-size:24rpx;border-radius:10rpx;}
+.symbol{float:left;width:10%;text-align:center;color:#dcdcdc;line-height:66rpx;}
+.btnBox{clear:both;padding:30rpx 20rpx;padding-top:50rpx;overflow:hidden;background-color: #fff;}
+.empty{float:left;width:35.5%;height:78rpx;line-height:78rpx;font-size:32rpx;color:#999;text-align:center;display:block;border:1rpx solid #dcdcdc;border-radius:10rpx;}
+.confirm{float:right;width:57.5%;height:78rpx;line-height:78rpx;font-size:32rpx;color:#fff;text-align:center;display:block;border:1rpx solid #fd5555;background:#fd5555;border-radius:10rpx;}
+
+.comList{clear:both;padding:10rpx 0 10rpx 20rpx;}
+.comInfo{clear:both;border-bottom:1rpx solid #f0f0f0;padding:20rpx 20rpx  20rpx 0;}
+.comName{font-size:32rpx;color:#333;line-height:50rpx;display:block;}
+.model{clear:both;line-height:50rpx;font-size:28rpx;color:#666;display:block;}
+.mpro{clear:both;line-height:50rpx;font-size:28rpx;color:#666;display:block;}
+.memberTime{flaot: left;width:50%;font-size:24rpx;color:#999;display:inline-block;}
+.micons{width:30rpx;height:27rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_8.png) no-repeat;background-size:30rpx 27rpx;display:inline-block;vertical-align: middle;margin-top:-0.4rem;}
+.region{flaot: right;width:48%;font-size:24rpx;color:#999;display:inline-block;text-align:right;}
+.region text{padding:0 8rpx;}
+.comList .comInfo::last-child{border-bottom:none;}
+
+.modeBox{clear:both;padding:10rpx 0;overflow:hidden;background-color: #fff;}
+.modeTit{height:60rpx;line-height:60rpx;font-size:28rpx;color:#666;padding:10rpx 20rpx;}
+.modeCon{clear:both;padding:0 10rpx;}
+.modeTxt{float:left;display:block;width:30%;height:63rpx;line-height:63rpx;font-size:24rpx;color:#666;text-align:center;border:1px solid #666;border-radius:10rpx;margin:0 1.3% 20rpx;}
+.modeCur{background:#f9e3e3;border:1px solid #fd5555;color:#fd5555;}
+
+
+/* 产品列表 */
+.prolistBox{clear:both;padding:0 0 20rpx 20rpx;overflow:hidden;}
+.prolistCon{clear:both;border-bottom:1rpx solid #f0f0f0;padding:20rpx 20rpx 20rpx 0;overflow:hidden;}
+.proImgCon{float:left;width:220rpx;height:220rpx;overflow:hidden;}
+.proImg{width:100%;height:220rpx;}
+.proTxt{float:right;width:470rpx;height:220rpx;margin-left:20rpx;}
+.proName{clear:both;height:80rpx;font-size:32rpx;color:#333;line-height:40rpx;display:inline-block;overflow:hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient: vertical;}
+.proName a{color:#333;text-decoration:none;}
+.comName{clear:both;height:40rpx;font-size:28rpx;color:#666;line-height:40rpx;/*padding-top:50rpx;*/overflow:hidden;}
+.priceCon{clear:both;color:#fd5555;font-size:24rpx;padding:20rpx 0 0;}
+.price{font-size:42rpx;}
+.prolistBox .prolistCon:last-child{border-bottom:0;}
+
+
+.tsgBox{clear:both;text-align:center;}
+.tsgIcon{width:169rpx;height:168rpx;background:url(https://style.org.hc360.com/images/admission_xcx/search/sIco_7.jpg) no-repeat;background-size:169rpx 168rpx;margin:115rpx auto 0;display:block;}
+.tsgTxt{text-align:center;font-size:24rpx;color:#666;line-height:50rpx;display:block;}
+
+.loadingBox{height: 64rpx; line-height: 64rpx; text-align: center; font-size: 22rpx; color: #999; line-break: 30rpx;}
+.loadingBox image{height:32rpx;width: 32rpx; margin:-2rpx 10rpx 0 0; vertical-align: middle;}
+
+.search-screen {height: 900rpx; position: absolute;width: 100%;/*background-color: #fff;*/overflow: hidden;transition: height .3s;}
+.search-screen_0 {height: 0;}

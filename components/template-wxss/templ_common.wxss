@@ -1,0 +1,9 @@
+.bannerBox{overflow:hidden;}
+.bannerBox image{width:100%;height:705rpx; display: block;}
+
+.proScroll .proScrollCon{margin: 0 19rpx; overflow: hidden;}
+.proScroll .proScrollCon swiper-item{position: relative; text-align: left; font-size: 0;}
+.proScroll .proScrollCon swiper-item.justOneSwiperItem{ text-align: left;}
+.proScroll .proScrollList{width:31.3%; height: 360rpx; background: #fff; display: inline-block;vertical-align: middle; margin: 0 1% 20rpx;}
+.proScroll .proScrollList text{display: block;height:56rpx;line-height: 28rpx; font-size:22rpx; margin:5rpx 10rpx; overflow: hidden;color:#333;}
+.proScroll .proScrollList image{width:220rpx;height:220rpx;}

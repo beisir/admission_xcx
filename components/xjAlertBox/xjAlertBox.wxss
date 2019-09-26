@@ -1,0 +1,44 @@
+/* 新增询价 */
+.xjAlertBox{background:rgba(0,0,0,0.53);position:fixed;bottom:0;top:0;height:100%;width:100%;left:0; z-index: 51;}
+.xjAlertBoxCon{position:absolute;background:#fff;width:100%;bottom:0;}
+.xjAlertLeft{display:block; float:left; width:170rpx; font-size:28rpx; color:#333;}
+.xjAlertBoxCon .xjTitle{height:90rpx;color:#333; font-size:34rpx; line-height:90rpx;border-bottom:1rpx solid #e5e5e5; text-align:center; margin-bottom:30rpx;}
+.xjAlertBoxCon .xjList{padding: 15rpx 0; line-height:78rpx;margin:0 50rpx;overflow:hidden;}
+.xjAlertRig{float:left;width:calc( 100% - 192rpx); border: 1px solid #e5e5e5; overflow: hidden; border-radius:10rpx;}
+.xjList input{height:78rpx; line-height:78rpx;width:100%;border:none; background:none; font-size:28rpx; padding-left: 20rpx;border-radius:10rpx;}
+.xjProName{font-size:28rpx;color:#333;line-height:78rpx; float:left;width:calc( 100% - 170rpx);overflow: hidden; text-overflow:ellipsis; white-space: nowrap;}
+.xjAlertBtn{height:90rpx; margin-top:30rpx;}
+.xjAlertBtn button{float:left; width:100%; font-size:34rpx; color:#fff; line-height:90rpx; height:90rpx; background:#fd5555; border:none; border-radius: 0;}
+.phcolor{color:#ddd;}
+.xjCloseBtn{ display:block;color:#666;font-size:60rpx;position:absolute;top:15rpx;right:30rpx;line-height:46rpx;height:55rpx;width:55rpx;text-align:center;border-radius:50%;text-indent:5rpx;overflow: hidden;}
+.xjAlertBoxCon .xjList:last-child{border:0;}
+.xjPromptAlert{width: 400rpx;height:80rpx;background:rgba(0,0,0,0.8); position: fixed; left: 50%; margin-left: -200rpx;top: 50%; margin-top: -40rpx;text-align: center; color: #fff; font-size: 28rpx; border-radius: 10rpx; line-height:80rpx; display: block; z-index: 500;}
+.xjPrompt{ text-align: center; font-size: 24rpx; color:#f66601; padding:40rpx 0; }
+.xjList textarea{height:150rpx;width:100%;border:none; background:none; font-size:28rpx; padding: 20rpx;border-radius:10rpx;  line-height: 40rpx;box-sizing: border-box;}
+
+.slidedown {
+    animation: slidedown 0.3s linear;
+    animation-fill-mode: forwards;
+}
+.slideup {
+    animation: slideup 0.3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideup {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

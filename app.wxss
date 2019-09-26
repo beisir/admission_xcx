@@ -1,0 +1,221 @@
+/**app.wxss**/
+page{
+    height: 100%;
+    width: 100%;
+    background: #f5f5f5;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+/* .container-index {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} */
+/* .index-content {
+    -webkit-flex: 1;
+    flex: 1;
+} */
+/* .index-scroll {
+    height: 100%;
+} */
+.tab-content {
+    padding-bottom: 140rpx;
+}
+.index-fiexd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50000;
+}
+.tab-view {
+    transform: translate3d(0, 0, 0);
+}
+.mallHeader{height:100rpx; background:url(https://style.org.hc360.com/images/admission_xcx/mallTopBg.png) bottom; background-size:750rpx 190rpx; padding:45rpx 30rpx; position: relative;}
+.logoBox{width:100rpx;height:100rpx; float: left; border-radius: 8rpx;}
+.logoBox image{height:100rpx;width:100rpx;}
+.logoRig{float: left;padding-top:2rpx;width:calc (100% - 300rpx);}
+.mallName{color: #fff;font-size:30rpx;line-height: 50rpx;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+.mallMmt{font-size: 26rpx;color: #fff; line-height: 40rpx;}
+.mallMmt icon{ display: block; float: left; width:35rpx;height: 32rpx; margin-right: 5rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) -220rpx 1rpx no-repeat; background-size:300rpx 600rpx; margin-top: 5rpx;}
+.mallMmt text{ margin-left:15rpx;}
+.logoRig{position:absolute; left:150rpx;right:30rpx;top:45rpx;}
+.navBox{/*overflow:hidden;*/height:113rpx; background: #fff;}
+.navLink{width:25%; padding-top:15rpx;float: left; height:97rpx;border-bottom: 1rpx solid #e5e5e5; text-align: center;font-size: 24rpx; color: #333;}
+.navLink:before{ content:""; display: block; width: 55rpx;height:50rpx; margin: 0 auto 4rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) no-repeat; background-size:300rpx 600rpx;}
+.navLink:nth-child(1)::before{ background-position:5rpx 5rpx;}
+.navLink:nth-child(2)::before{ background-position:-46rpx 5rpx;}
+.navLink:nth-child(3)::before{ background-position:-103rpx 5rpx;}
+.navLink:nth-child(4)::before{ background-position:-161rpx 5rpx;}
+.navLink.cur:nth-child(1)::before{ background-position:5rpx -45rpx;}
+.navLink.cur:nth-child(2)::before{ background-position:-46rpx -45rpx;}
+.navLink.cur:nth-child(3)::before{ background-position:-103rpx -45rpx;}
+.navLink.cur:nth-child(4)::before{ background-position:-161rpx -45rpx;}
+.navLink.cur{color:#fd5555; border-bottom:4rpx solid #fd5555; height:95rpx}
+
+
+
+
+
+.tabListBox{padding-bottom:120rpx; padding-top:0rpx; background: #f5f5f5; overflow: hidden;}
+
+.myCardBox{padding-bottom:20rpx;background: #f5f5f5; overflow: hidden;}
+.searchClassCon{padding-top:0rpx; background: #f5f5f5; overflow: hidden;}
+
+
+/* 注释首页 全部商品样式 */
+/* .allProTit{overflow: hidden; padding: 24rpx 0; background: #fff;height:40rpx; margin-bottom: 20rpx;}
+.allProTit .proTit{height: 40rpx;width:50%; float: left;border-left:1rpx solid #e5e5e5; margin-left:-1rpx; text-align: center; font-size: 32rpx;color:#666;} */
+/* .proTit.cur{ color:#fd5555;}
+.proTit icon{ display:inline-block;width: 18rpx;height:28rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) 0 -197rpx no-repeat;background-size:300rpx 600rpx; margin-left: 5rpx; vertical-align: middle; }
+.proTit .up{background-position:-20rpx -197rpx;}
+.proTit .down{background-position:-41rpx -197rpx;} */
+
+
+/* 公司介绍 */
+.companyBox,.contactBox{ overflow: hidden; background: #fff; margin: 20rpx 20rpx 0 20rpx; border-radius: 15rpx;}
+.companyBox .cTit,.contactBox .cTit{height:90rpx;padding: 0 20rpx; border-bottom: 1rpx solid #e5e5e5; font-size: 34rpx; color: #333; line-height: 90rpx; font-weight: bold;} 
+.companyCon1{ padding:30rpx 25rpx; text-align: center;}
+.companyCon1 .companyImg{height:135rpx; display:inline-block;width:210rpx; margin: 0 5rpx;}
+.companyImg image{width:210rpx;height:135rpx;}
+.companyCon1 text{ display:block; text-align:left; line-height: 52rpx; font-size: 28rpx;color:#666; padding:15rpx 5rpx 0;}
+.companyCon2,.contactCon1{padding:15rpx 30rpx; line-height: 56rpx; color: #333; font-size: 28rpx;}
+.companyCon2 icon{display:block;float:left; width:40rpx;height:38rpx; margin-top: 10rpx; margin-right:10rpx;background:url(https://style.org.hc360.com/images/admission_xcx/icon.png) 0 -197rpx no-repeat;background-size:300rpx 600rpx;} 
+.cName icon{ background-position:0 -153rpx;}
+.cAdd icon{ background-position:-40rpx -152rpx;}
+.cMmt icon{ background-position:-86rpx -150rpx;}
+.cAuth icon{ background-position:-136rpx -150rpx;}
+.companyCon3{ margin: 0 20rpx;}
+.companyCon3 .authList,.contactCon2 .conList{ padding:24rpx 0; line-height: 40rpx; font-size: 28rpx; overflow: hidden; border-bottom: 1px solid #e5e5e5;} 
+.authList text,.conList text{display: block; float: left; width:25%; color: #999;}
+.conList text{width:20%;}
+.authList .authRig,.conList .conListRig{display: block; float: left;width:75%;}
+.conList .conListRig{width:80%;}
+.authList:last-child,.conList:last-child{border-bottom:0;}
+.contactCon2{margin: 0 30rpx;}
+.companyCon4,.contactCon3{margin:30rpx;}
+.companyCon4 image{width:100%;}
+
+
+/* .cLogo{float: left;width:220rpx;height:70rpx; margin-top:20rpx;}
+.cLogo image{width:220rpx;height:70rpx;} */
+.contactCon1{position: relative; height: 120rpx;}
+.clRig{position: absolute; left: 270rpx;top:35rpx; line-height: 45rpx;right:20rpx;}
+.contacts{font-size: 34rpx; color: #333;}
+.contacts text{color: #666; font-size: 24rpx;padding-left: 10rpx;}
+.conName{font-size: 28rpx; color:#666;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+/* .mapBtn{margin-bottom:80rpx;}*/
+.mapBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+/* position:fixed;right:30rpx;bottom:120rpx; */
+.mapBtn .btn-map{height:90rpx;width:90rpx;border-radius:50%; border: none;background:#fd6565; color: #fff; font-size:24rpx; text-align: center; padding:16rpx 12rpx; line-height:30rpx; box-shadow:0 0 30rpx #ffbebe;z-index: 50000;}
+.btn-map cover-view{
+    margin-top:10rpx;
+    font-size:14px;
+}
+
+
+
+
+
+
+.botFixed, .botFixed2, .botFixed3 {
+    position: fixed;
+    height: 98rpx;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 5rpx 4rpx #ddd;
+    font-size: 24rpx;
+    color: #666;
+    text-align: center;
+}
+
+.classLink, .telLink, .companyLink {
+    width: 20%;
+    float: left;
+    padding-top: 12rpx;
+    height: 86rpx;
+}
+
+.supplierBtn {
+    width: 40%;
+    float: left;
+    font-size: 32rpx;
+    line-height: 98rpx;
+    background: #fd5555;
+    text-align: center;
+    color: #fff;
+}
+
+.classLink:before, .telLink:before, .companyLink:before {
+    content: "";
+    display: block;
+    width: 50rpx;
+    height: 45rpx;
+    margin: 0 auto 2rpx;
+    background: url(https://style.org.hc360.com/images/admission_xcx/icon.png) no-repeat;
+    background-size: 300rpx 600rpx;
+}
+
+.classLink::before {
+    background-position: 5rpx -95rpx;
+}
+
+.telLink::before {
+    background-position: -43rpx -95rpx;
+}
+
+.companyLink::before {
+    background-position: -93rpx -95rpx;
+}
+
+
+
+
+
+/*新增2018-08-14*/
+.xcxBotFixed{ position:fixed; height:98rpx;left:0;width:100%; bottom:0; background: #fff; box-shadow:0 0 5rpx #ddd;}
+.xcxBotFixed .botLink{width:25%;float:left;height:98rpx; font-size:24rpx; color: #333; text-align: center;}
+.botLink icon{display:block;height:50rpx;width:50rpx;background:url(https://style.org.hc360.com/images/admission_xcx/indexIcon.png) 0 -680rpx no-repeat;background-size:210rpx 800rpx; margin:12rpx auto 2rpx;}
+.botLink icon.botIcon1{background-position:2rpx -382rpx;}
+.botLink icon.botIcon2{background-position:-50rpx -382rpx;}
+.botLink icon.botIcon3{background-position:-102rpx -380rpx;}
+.botLink icon.botIcon4{background-position:-153rpx -380rpx;}
+.botLink.cur icon.botIcon1{background-position:2rpx -436rpx;}
+.botLink.cur icon.botIcon2{background-position:-50rpx -436rpx;}
+.botLink.cur icon.botIcon3{background-position:-102rpx -434rpx;}
+.botLink.cur icon.botIcon4{background-position:-153rpx -434rpx;}
+.botLink.cur{color:#fd5555;}
+/*拨打电话按钮*/
+.conListRig button{position: absolute; right: 20rpx;top:-4rpx; font-size:26rpx;line-height:50rpx;height:50rpx;padding:0 30rpx; border-radius: 30rpx; background: #fd5555; color: #fff; border: 0;}
+.conList .conListRig{position: relative;}
+button::after{ border: 0;}
+
+.companyCon2{padding:10rpx 20rpx 0rpx;overflow:hidden;}
+.companyCon2 navigator, .companyCon2 .company{height: 200rpx;width:710rpx; margin-bottom: 20rpx;}
+.companyBg1{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg1.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg2{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg2.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg3{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg3.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg4{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg4.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg5{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg5.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg6{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg6.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg7{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg7.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg8{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg8.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg9{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg9.png) no-repeat; background-size:710rpx 200rpx;}
+.companyBg10{background:url(http://style.org.hc360.com/images/admission_xcx/companyBg10.png) no-repeat; background-size:710rpx 200rpx;}
+.companyCon2 navigator text, .companyCon2 .company text{ display: block; margin:0 30rpx; font-size:34rpx; color: #fff; font-weight: bold; text-align: center; padding-top:68rpx;text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+
+.loadingBox{height: 60rpx; text-align: center; font-size: 22rpx; color: #999; line-break: 30rpx;}
+.loadingBox image{height:32rpx;width: 32rpx; margin:-2rpx 10rpx 0 0; vertical-align: middle;}

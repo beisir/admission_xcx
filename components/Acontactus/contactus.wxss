@@ -1,0 +1,107 @@
+.tabListBox {
+    padding-top: 0rpx;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.companyBox, .contactBox {
+    overflow: hidden;
+    background: #fff;
+    margin: 20rpx 20rpx 0 20rpx;
+    border-radius: 15rpx;
+}
+.contactCon1 {
+    position:relative;
+    height:120rpx;
+}
+.contactCon2 {
+    margin:0 30rpx;
+}
+
+.companyCon2,.contactCon1{
+    padding:15rpx 30rpx; line-height: 56rpx; color: #333; font-size: 28rpx;}
+.companyBox .cTit, .contactBox .cTit {
+    height: 90rpx;
+    padding: 0 20rpx;
+    border-bottom: 1rpx solid #e5e5e5;
+    font-size: 34rpx;
+    color: #333;
+    line-height: 90rpx;
+    font-weight: bold;
+}
+
+
+
+.cLogo {
+    float: left;
+    /* width: 220rpx; */
+    height: 70rpx;
+    margin-top: 20rpx;
+}
+
+.cLogo image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.clRig {
+    position: absolute;
+    left: 160rpx;
+    top: 35rpx;
+    line-height: 45rpx;
+    right: 20rpx;
+}
+
+.contacts {
+    font-size: 34rpx;
+    color: #333;
+}
+
+.contacts text {
+    color: #666;
+    font-size: 24rpx;
+    padding-left: 10rpx;
+}
+
+.conName {
+    font-size: 28rpx;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.authList .authRig,.conList .conListRig{display: block; float: left;width:75%;}
+.conList .conListRig{width:80%;}
+.companyCon4,.contactCon3{margin:30rpx;}
+.mapBtn{position: relative; margin-bottom:80rpx;}
+.mapBtn button{position:fixed;right:30rpx;bottom:120rpx;height:90rpx;width:90rpx;border-radius:50%; border: none;background:#fd6565; color: #fff; font-size:24rpx; text-align: center; padding:16rpx 12rpx; line-height:30rpx; box-shadow:0 0 30rpx #ffbebe;}
+.mapBtn button::after{content:"";border:none;}
+.mapBox{ overflow: hidden; font-size:26rpx;width: 100%;height: 440rpx;}
+.companyCon3 .authList,.contactCon2 .conList{ padding:24rpx 0; line-height: 40rpx; font-size: 28rpx; overflow: hidden; border-bottom: 1px solid #e5e5e5;} 
+.authList text,.conList text{display: block; float: left; width:25%; color: #999;}
+.conList text{width:20%;}
+.authList .authRig,.conList .conListRig{display: block; float: left;width:75%;}
+.conList .conListRig{width:80%;}
+.authList:last-child,.conList:last-child{border-bottom:0;}
+
+.recommendCon {
+    position:relative;
+    width:40rpx;
+    height:30rpx;
+    background:url(https://style.org.hc360.com/images/microMall/qy/mb1/template1Ico.png) 10rpx -60rpx no-repeat #fff;
+    background-size:25rpx 165rpx;
+    right:0;
+    bottom:0;
+}
+.kefu {
+    text-align: center;
+    
+    font-size: 12px;
+    color: #888;
+    padding-top:20rpx;
+
+}
+.kefu text{
+    display: block;
+    margin-bottom: 10rpx;
+}

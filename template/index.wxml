@@ -1,0 +1,190 @@
+<!-- homepage top nav -->
+<template name="mallHeader">
+    <view class='mallHeader'>
+        <view class='logoBox'>
+            <image src="{{companyInfo.shoplogo || 'https://style.org.hc360.com/images/admission_xcx/hcLogoImg.png'}}"></image>
+        </view>
+        <view class='logoRig'>
+            <view class='mallName'>{{companyInfo.name}}</view>
+            <view class='mallMmt' wx:if="{{companyInfo.memberTypeId >= 4 }}">
+                <icon></icon>买卖通会员
+                <text>第{{companyInfo.mmtAges}}年</text>
+            </view>
+            <view class='mallMmt' wx:else>
+                <icon></icon>普通会员
+            </view>
+        </view>
+    </view>
+</template>
+
+
+
+
+<!-- 首页 -->
+<template name="homepage">
+    <view class='tabListBox'>
+        <!--精品推荐-->
+        <view class='newsProBox'>
+            <view class='titleCon'>精品推荐</view>
+            <proBotList></proBotList>
+        </view>
+        <!--最新发布-->
+        <view class='newsProBox'>
+            <view class='titleCon'>最新发布</view>
+            <proBotList></proBotList>
+        </view>
+    </view>
+
+</template>
+
+
+<!-- 全部商品 -->
+<template name="allgoods">
+    <view class='tabListBox'>
+        <view class='allProTit'>
+            <view class='proTit cur'>综合</view>
+            <view class='proTit' bindtap="hello">价格
+                <icon></icon>
+                <icon class='down'></icon>
+                <icon class='up'></icon>
+            </view>
+        </view>
+        <view class='newsProBox'>
+            <proBotList></proBotList>
+        </view>
+    </view>
+</template>
+
+
+
+
+<!-- 公司介绍 -->
+<template name="company">
+    <view class='tabListBox'>
+        <view class='companyBox'>
+            <view class='cTit'>公司介绍</view>
+            <view class='companyCon1'>
+                <view class='companyImg'>
+                    <image src='https://style.org.hc360.com/images/admission_xcx/companyImg.png'></image>
+                </view>
+                <view class='companyImg'>
+                    <image src='https://style.org.hc360.com/images/admission_xcx/companyImg.png'></image>
+                </view>
+                <view class='companyImg'>
+                    <image src='https://style.org.hc360.com/images/admission_xcx/companyImg.png'></image>
+                </view>
+                <text>爱热福电取暖器所有产品及其零件均为德国原装进口德国制造商为Thermotec. AG股份公司，坐落于德国萨克森州的格尔利茨附近。Thermotec. AG股份公司涉足现代化高效电热系统领域已有二十多年。 公司主要研发、生产、销售高质量且能接入任何常规电力系统的电热供暖器，公司的研发部门一直在探索如何使电能转换为一种经济有效的取暖解决方案。爱热福电取暖器安装器安装装···  </text>
+            </view>
+        </view>
+        <view class='companyBox'>
+            <view class='cTit'>企业资质</view>
+            <view class='companyCon2'>
+                <view class='cName'>
+                    <icon></icon>南昌创业家具有限公司</view>
+                <view class='cAdd'>
+                    <icon></icon>所在地区：江西省南昌市</view>
+                <view class='cMmt'>
+                    <icon></icon>买卖通会员 第3年</view>
+                <view class='cAuth'>
+                    <icon></icon>工商注册信息：商安信认证</view>
+            </view>
+        </view>
+        <view class='companyBox'>
+            <view class='cTit'>企业身份认证</view>
+            <view class='companyCon3'>
+                <view class='authList'>
+                    <text>公司名称：</text>
+                    <view class='authRig'>泉州市柳氏机械有限公司</view>
+                </view>
+                <view class='authList'>
+                    <text>公司名称：</text>
+                    <view class='authRig'>泉州市柳氏机械有限公司</view>
+                </view>
+                <view class='authList'>
+                    <text>注册号：</text>
+                    <view class='authRig'>91350583595989128E</view>
+                </view>
+                <view class='authList'>
+                    <text>注册资本：</text>
+                    <view class='authRig'>人民币100 万元</view>
+                </view>
+                <view class='authList'>
+                    <text>法定代表</text>
+                    <view class='authRig'>柳如刚</view>
+                </view>
+                <view class='authList'>
+                    <text>企业类型</text>
+                    <view class='authRig'>有限责任公司</view>
+                </view>
+                <view class='authList'>
+                    <text>营业期限：</text>
+                    <view class='authRig'>自 2017-12-11 00:00:00</view>
+                </view>
+                <view class='authList'>
+                    <text>经营模式：</text>
+                    <view class='authRig'>生产型</view>
+                </view>
+                <view class='authList'>
+                    <text>联系人：</text>
+                    <view class='authRig'>柳如刚（总经理）</view>
+                </view>
+            </view>
+        </view>
+        <view class='companyBox'>
+            <view class='cTit'>买卖通证书</view>
+            <view class='companyCon4'>
+                <image src='https://style.org.hc360.com/images/admission_xcx/mmtImg.png'></image>
+            </view>
+        </view>
+    </view>
+</template>    
+
+
+<!-- 联系我们 -->
+<template name="contactus">
+    <view class='tabListBox'>
+        <view class='contactBox'>
+            <view class='cTit'>联系方式</view>
+            <view class='contactCon1'>
+                <view class='cLogo'>
+                    <image src='https://style.org.hc360.com/images/admission_xcx/contactImg.png'></image>
+                </view>
+                <view class='clRig'>
+                    <view class='contacts'>张子强
+                        <text>销售经理</text>
+                    </view>
+                    <view class='conName'>安平县双赫金属丝网厂安平县双赫金属丝网厂</view>
+                </view>
+            </view>
+        </view>
+        <view class='contactBox'>
+            <view class='contactCon2'>
+                <view class='conList'>
+                    <text>手机：</text>
+                    <view class='conListRig'>15699999999</view>
+                </view>
+                <view class='conList'>
+                    <text>电话：</text>
+                    <view class='conListRig'>0318-785178</view>
+                </view>
+                <view class='conList'>
+                    <text>传真：</text>
+                    <view class='conListRig'>0318-785178</view>
+                </view>
+                <view class='conList'>
+                    <text>地址：</text>
+                    <view class='conListRig'>中国河北省保定市高阳县 河北省保定市高阳县小王果庄乡于堤村南</view>
+                </view>
+            </view>
+        </view>
+        <view class='contactBox'>
+            <view class='cTit'>联系方式</view>
+            <view class='contactCon3'>
+                <view class='mapBox'>地图</view>
+            </view>
+        </view>
+        <view class='mapBtn'>
+            <button type='button'>导航到店</button>
+        </view>
+    </view>
+</template>    

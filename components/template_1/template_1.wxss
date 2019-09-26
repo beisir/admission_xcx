@@ -1,0 +1,11 @@
+@import "../template-wxss/template_10.wxss";
+@import "../template-wxss/template_11.wxss";
+@import "../template-wxss/template_12.wxss";
+@import "../template-wxss/template_13.wxss";
+@import "../template-wxss/template_14.wxss";
+@import "../template-wxss/template_15.wxss";
+@import "../template-wxss/template_16.wxss";
+@import "../template-wxss/template_17.wxss";
+@import "../template-wxss/template_18.wxss";
+@import "../template-wxss/template_19.wxss";
+@import "../template-wxss/templ_common.wxss";

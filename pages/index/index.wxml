@@ -1,0 +1,68 @@
+<import src="../../template/index.wxml" />
+<view class="container-index">
+
+<!-- page TOP message -->
+<view id="titleBox"> 
+    <template is="mallHeader" data="{{...companyData}}"></template>
+</view>
+<!-- <view class="navBox {{isFiexd ? 'index-fiexd': 'index-content'}}"> -->
+<view class="navBox">
+    <block wx:for="{{ImageList}}" wx:key="{{item}}">
+        <view data-index="{{index}}"
+            class="navLink {{activeIndex == index ? 'cur' : ''}}"
+            bindtap="swichNav"
+        >{{item}}</view>
+    </block>
+</view>
+<view class="navBox index-fiexd" wx:if="{{isFiexd}}">
+    <block wx:for="{{ImageList}}" wx:key="{{item}}">
+        <view data-index="{{index}}"
+            class="navLink {{activeIndex == index ? 'cur' : ''}}"
+            bindtap="swichNav"
+        >{{item}}</view>
+    </block>
+</view>
+
+<!-- style="height: 850rpx;" -->
+<!-- <view class="index-content">
+    <swiper class="tab-content" 
+        current="{{activeIndex}}"
+        duration="300"
+        circular="true"
+        bindchange="switchTab"
+        >
+        <swiper-item wx:for="{{ImageList}}" wx:key="{{index}}">
+            <AhomePage pid="{{pid}}" imid="{{imid}}" wx:if="{{index === 0}}" />
+            <AllGoods pid="{{pid}}" wx:elif="{{index === 1}}"/>
+            <Acompany wx:elif="{{index === 2}}" companyData="{{companyData}}"/>
+            <Acontactus wx:elif="{{index === 3}}" activeIndex="{{activeIndex}}" companyInfo="{{companyData.companyInfo}}"/>
+        </swiper-item>
+    </swiper>
+</view> -->
+
+
+<!-- <view class="index-content" style="flex: 1;"> -->
+<view class="index-content">
+    <view class="tab-content">
+        <view class="tab-view" style="display:{{0 == activeIndex ? 'block': 'none'}}">
+            <AhomePage pid="{{pid}}" imid="{{imid}}" />
+        </view>
+        <view class="tab-view fadeIn" style="display:{{1 == activeIndex ? 'block': 'none'}}">
+            <AllGoods allData="{{allData}}" />
+        </view>
+        <view class="tab-view fadeIn" style="display:{{2 == activeIndex ? 'block': 'none'}}">
+            <Acompany companyData="{{companyData}}" />
+        </view>
+        <view class="tab-view fadeIn" style="display:{{3 == activeIndex ? 'block': 'none'}}">
+            <Acontactus companyInfo="{{companyData.companyInfo}}" />
+        </view>
+    </view>
+</view>
+
+<!--底部浮动-->
+<footerNav companyInfo="{{companyData.companyInfo}}" bind:xjAlertBox="xjAlertBox"></footerNav>
+<!--请供应商联系我-->
+<xjAlertBox aniStyle="{{aniStyle}}" pid="{{pid}}" referrer="index"></xjAlertBox>
+
+
+</view>

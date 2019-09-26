@@ -1,0 +1,94 @@
+<!--pages/class/class.wxml-->
+<view class='classBox'>
+    <view class='classLeft'>
+        <block wx:for="{{lstSeriesVO}}" wx:key="{{index}}">
+            <text class="{{index === activeIndex ? 'classCur' : ''}}" 
+                data-index="{{index}}"
+                bindtap="activeSeries"
+            >{{item.seriesName}}</text>
+        </block>
+    </view>
+    
+
+    <view class='classRig'>
+        <block wx:for="{{lstSeriesVO[activeIndex].children}}" wx:key="{{index}}">
+            <view class='classRigCon'>
+                <view class='classRigTitCon' wx:if="{{item.seriesName}}">
+                    <navigator class="classRigTit" 
+                        url="/pages/searchList/searchList?seriesid={{item.seriesid}}&pid={{classOption.pid}}"
+                    >{{item.seriesName}}</navigator>
+                </view>
+                <view class='classRigBot'>
+                    <block wx:for="{{dataList[index]}}"
+                        wx:for-item="childItem"
+                        wx:for-index="childIndex"   
+                        wx:key="{{childIndex}}">
+                        <navigator class="cLink" url="/pages/detail/detail?bcid={{childItem.bc_id}}">
+                            <image src='https:{{childItem.picpath}}'></image>
+                            <text>{{childItem.title}}</text>
+                        </navigator>
+                    </block>
+                </view>
+            </view>
+        </block>
+
+        
+        <!-- <view class='classRigCon'>
+            <view class='classRigTitCon'>
+                <text class='classRigTit'>装修建材</text>
+            </view>
+            <view class='classRigBot'>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg4.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg2.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg6.jpg'></image>
+                    <text>电梯</text>
+                </view>
+            </view>
+        </view>
+        <view class='classRigCon'>
+            <view class='classRigTitCon'>
+                <text class='classRigTit'>装修建材</text>
+            </view>
+            <view class='classRigBot'>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg4.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg5.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg6.jpg'></image>
+                    <text>电梯</text>
+                </view>
+            </view>
+        </view>
+        <view class='classRigCon'>
+            <view class='classRigTitCon'>
+                <text class='classRigTit'>装修建材</text>
+            </view>
+            <view class='classRigBot'>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg5.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg6.jpg'></image>
+                    <text>电梯</text>
+                </view>
+                <view class='cLink'>
+                    <image src='https://style.org.hc360.com/images/cpk/classImg1.jpg'></image>
+                    <text>电梯</text>
+                </view>
+            </view>
+        </view> -->
+    </view>
+</view>

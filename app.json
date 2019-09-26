@@ -1,0 +1,64 @@
+{
+    "pages": [
+        "pages/xcx_index/xcx_index",
+        "pages/search/search",
+        "pages/s_area/s_area",
+        "pages/index/index",
+        "pages/xcx_class/xcx_class",
+        "pages/xcx_class2/xcx_class2",
+        "pages/xcx_querys/xcx_querys",
+        "pages/xcx_purchase/xcx_purchase",
+        "pages/detail/detail",
+        "pages/searchList/searchList",
+        "pages/class/class",
+        "pages/setup_shop/setup_shop",
+        "pages/mycard/mycard",
+        "pages/map-page/map-page",
+        "pages/reg_agreement/reg_agreement",
+        "pages/setup_shop_succ/setup_shop_succ"
+    ],
+    "tabBar": {
+        "color": "#333",
+        "selectedColor": "#fd5555",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/xcx_index/xcx_index",
+                "iconPath": "images/homeIco.png",
+                "selectedIconPath": "images/homeIcoCur.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/xcx_class/xcx_class",
+                "iconPath": "images/classIco.png",
+                "selectedIconPath": "images/classIcoCur.png",
+                "text": "分类"
+            },
+            {
+                "pagePath": "pages/xcx_querys/xcx_querys",
+                "iconPath": "images/cgIco.png",
+                "selectedIconPath": "images/cgIcoCur.png",
+                "text": "采购"
+            },
+            {
+                "pagePath": "pages/setup_shop/setup_shop",
+                "iconPath": "images/itemIco.png",
+                "selectedIconPath": "images/itemIcoCur.png",
+                "text": "开店"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fd5555",
+        "navigationBarTitleText": "慧聪网",
+        "navigationBarTextStyle": "fff"
+    },
+    "plugins": {
+        "htmltowxml": {
+            "version": "1.3.0",
+            "provider": "wxa51b9c855ae38f3c"
+        }
+    }
+}

@@ -1,0 +1,83 @@
+/**
+ * [DateFr filter 过滤函数专为数据渲染过滤，小程序没有专门提供的过滤的api，]
+ * [这个wxs文件是专为小程序提供过滤方法   ]
+ * [引入方式  <wxs src="../../utils/filter.wxs" module="tools" /> ]
+ * [{src: '文件的引入的路径,在wxml中引入', module： '抛出的方法名'}]
+ * [ps: 'wxs文件不支持 es6语法']
+ */
+var DateFr = {
+    /**
+     * [priceFoalt 过滤为2位浮点数]   
+     * [{num: Number(传入的价格), params:Number(传入的状态值: 0小数点之的整数, 1：返回小数点之后的小数)}]
+     */
+    priceFoalt: function (num, params) {
+        var foaltNumber = (num * 1).toFixed(2),
+            price = foaltNumber.split('.');
+        return !params ? price[0] : price[1];
+    },
+    isTemplate: function (options) {
+        if (options.indexOf('module') !== -1 && options !== 'module_20') {
+            return true;
+        } else {
+            return false;
+        };
+    },
+    JSON: function (options){
+        return JSON.parse(options);
+	},
+	concatedArr:function(arr){
+		var newArr = []
+		while(arr.length>0){
+			newArr = newArr.concat(arr.shift())
+		}
+		return newArr;
+	},
+    isLength: function (data, key){
+        if (key.indexOf('module_3') === -1){
+            return data.length > 0 ? true : false;
+        } else {
+            return data.length > 0 ? true : false;
+        };
+    },
+    isIMGHTTP: function (str){
+        if( str.indexOf('https') == -1 && str.indexOf('http') !== -1 ){
+            str = str.replace('http', 'https');
+            return str;            
+        } else  if(str.indexOf('https') == -1){
+            return 'https:' + str;
+		}
+		else {
+			return  str;
+		};
+    },
+    isPrice: function (opt){
+		opt = opt + '';
+		if(opt.indexOf('¥')!=-1||opt.indexOf('￥')!=-1){
+			opt = opt.slice(1)
+		}
+        var isble = opt * 1;
+        return isble !== 0 ? true : false;
+    },
+    Address: function (options) {
+        var reg = getRegExp("[中国\:]", "g");
+        options = options.replace(reg, ' ');
+        return options;
+    },
+    productType: function (opt){
+        var reg = getRegExp("\[|\]|\,", "g");
+        opt = opt.replace(reg, ' ');
+        return opt;
+    }
+}
+
+module.exports = {
+    priceFoalt: DateFr.priceFoalt,
+    isTemplate: DateFr.isTemplate,
+    JSON: DateFr.JSON,
+    isLength: DateFr.isLength,
+    isIMGHTTP: DateFr.isIMGHTTP,
+    isPrice: DateFr.isPrice,
+    Address: DateFr.Address,
+    productType: DateFr.productType,
+    concatedArr: DateFr.concatedArr,
+}

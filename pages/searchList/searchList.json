@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "AllGoods": "/components/AllGoods/allGoods",
+        "proBotList": "/components/proBotList/proBotList"
+    }
+}

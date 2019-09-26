@@ -1,0 +1,19 @@
+.tabListBox {
+    padding-top: 0rpx;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.titleCon {
+    font-size: 34rpx;
+    color: #333;
+    background: #f5f5f5;
+    padding: 5rpx 20rpx 15rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    clear: both;
+    display: block;
+    font-weight: bold;
+}
+.newsProBox{ height: 100%;}
+

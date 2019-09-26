@@ -1,0 +1,48 @@
+<view class='tabBox'>
+    <block wx:for="{{titleBar}}" wx:key="{{item}}">
+        <text class="tabTxt {{titleIndex === index ? 'tabCur': ''}}"
+            data-index="{{index}}"
+            bindtap="toogerTitle"
+        >{{item}}</text>
+    </block>
+    <view class="tabtraslate"
+        style="transform: translate({{titleIndex === 0 ? '0': '100'}}%)"
+    ></view>
+</view>
+
+<view class='searchBox_2'>
+    <view class='searchCon_2'>
+        <view class='search'>
+            <view class='sIcon'></view>
+            <input type='text'
+                class='sInput2'
+                maxlength="200"
+                placeholder="{{titleIndex === 0 ? '输入产品名称': '输入企业名称'}}"
+                focus="true"
+                bindinput="pressKey"
+                confirm-type="搜索"
+                bindconfirm="searchKey"
+            />
+        </view>
+        <button class="resetBtn" bindtap="searchKey">搜索</button>
+    </view>
+</view>
+
+<view class='sWordBox' wx:if="{{histor_word.length}}">
+    <view class='swordTit'>
+        <text class='title'>搜索历史</text>
+        <view class='delBtn' bindtap="removeDel"></view>
+    </view>
+    <view class='swordCon'>
+        <block wx:for="{{histor_word}}" wx:key="{{item}}">
+            <navigator class='swordTxt'
+                url="/pages/s_area/s_area?w={{item.w}}&active={{item.active}}"
+            >{{item.w}}</navigator>
+            <!-- <text class='swordTxt'>{{item}}</text>  -->
+        </block>
+    </view>
+</view>
+<view class='tsgBox' wx:else>
+    <view class='tsgIcon'></view>
+    <text class='tsgTxt'>暂无搜索历史内容</text>
+</view>

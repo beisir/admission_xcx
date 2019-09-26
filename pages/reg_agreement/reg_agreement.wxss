@@ -1,0 +1,7 @@
+/* pages/reg_agreement/reg_agreement.wxss */
+.regXyBox{ overflow: hidden; font-size: 28rpx; color: #666; line-height: 50rpx; padding: 30rpx;}
+.regXyTop{color: #333; text-indent:2em;}
+.aTitle{ margin-top: 20rpx; color: #333; font-weight: bold;}
+.regXyBox text{display: block; margin-bottom:10rpx;}
+.regXyBox text.paddLeft20{padding-left: 25rpx;}
+.regXyBot{text-align: right; color:#333; padding:15rpx 0 20rpx;}

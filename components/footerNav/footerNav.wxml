@@ -1,0 +1,7 @@
+<!-- 底部导航 -->
+<view class='botFixed'>
+    <navigator class='classLink' url="/pages/class/class?username={{companyInfo.userName}}&pid={{companyInfo.providerId}}">分类</navigator>
+    <view class='telLink' bindtap="telCallLink">电话</view>
+    <navigator class='companyLink' url="/pages/mycard/mycard">名片</navigator>
+    <view class='supplierBtn' bindtap="xjAlertBox">请供应商联系我</view>
+</view>

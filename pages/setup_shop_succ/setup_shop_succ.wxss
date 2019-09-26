@@ -1,0 +1,6 @@
+/* pages/setup_shop_succ/setup_shop_succ.wxss */
+.succBox{ overflow: hidden;}
+.succBoxTop{ padding:160rpx 0 120rpx; text-align: center;}
+.succBoxTop icon{display: block;height:80rpx;width:80rpx; margin: 0 auto;background:url(https://style.org.hc360.com/images/admission_xcx/succIco.png) no-repeat;background-size:80rpx 80rpx;}
+.succBoxTop text{ font-size: 32rpx; color: #333; padding:20rpx 0 0; display: block; font-weight: bold;}
+.succPrompt{ text-align: center; color: #999; font-size: 28rpx;}

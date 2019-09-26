@@ -1,0 +1,52 @@
+.botFixed, .botFixed2, .botFixed3 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 98rpx;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 5rpx 4rpx #ddd;
+    font-size: 24rpx;
+    color: #666;
+    text-align: center;
+    z-index: 10;
+}
+
+.classLink, .telLink, .companyLink {
+    width: 20%;
+    float: left;
+    padding-top: 12rpx;
+    height: 86rpx;
+}
+
+.supplierBtn {
+    width: 40%;
+    float: left;
+    font-size: 32rpx;
+    line-height: 98rpx;
+    background: #fd5555;
+    text-align: center;
+    color: #fff;
+}
+
+.classLink:before, .telLink:before, .companyLink:before {
+    content: "";
+    display: block;
+    width: 50rpx;
+    height: 45rpx;
+    margin: 0 auto 2rpx;
+    background: url(https://style.org.hc360.com/images/admission_xcx/icon.png) no-repeat;
+    background-size: 300rpx 600rpx;
+}
+
+.classLink::before {
+    background-position: 5rpx -95rpx;
+}
+
+.telLink::before {
+    background-position: -43rpx -95rpx;
+}
+
+.companyLink::before {
+    background-position: -93rpx -95rpx;
+}

@@ -1,0 +1,13 @@
+<!-- <scroll-view class="index-scroll" style="height: 100%;" scroll-y="true"> -->
+    <view class='tabListBox' wx:if="{{isTemplate}}">
+        <view class='newsProBox' wx:if="{{recVo.length}}">
+            <view class='titleCon'>最新发布</view>
+            <proBotList pid="{{pid}}" dataList="{{recVo}}"></proBotList>
+        </view>
+        <view class='newsProBox' wx:if="{{latestPro.length}}">
+            <view class='titleCon'>精品推荐</view>
+            <proBotList pid="{{pid}}" dataList="{{latestPro}}"></proBotList>
+        </view>
+    </view>
+    <tempONE wx:else  pid="{{pid}}" templateId="{{templateId}}"  dataArray="{{dataArray}}"></tempONE>
+<!-- </scroll-view> -->

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "proBotList": "/components/proBotList/proBotList",
+        "tempONE": "/components/template_1/template_1"
+    }
+}

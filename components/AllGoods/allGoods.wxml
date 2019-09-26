@@ -1,0 +1,19 @@
+<view class='tabListBox'>
+    <view class='allProTit'>
+        <block wx:for="{{titleBar}}" wx:key="{{index}}">
+            <view  data-index="{{index}}"
+                class="proTit {{(activeIndex === index) ? 'cur': ''}}"
+                bindtap="toggerClass">{{item}}
+                <icon wx:if="{{index == 1}}" class="{{priceClass}}"></icon>
+            </view>
+        </block>
+    </view>
+    <view class='newsProBox'>
+        <proBotList dataList="{{dataList}}"></proBotList>
+            <view class='loadingBox'
+                wx:if="{{isLoading}}">
+                <image src='{{loadingIMG}}' />
+            正在加载...</view>
+            <view class='loadingBox'style="height: 60rpx;margin-top: 25px;font-size: 14px;" wx:if="{{!dataList.length && !isLoading}}">暂无数据</view>
+    </view>
+</view>

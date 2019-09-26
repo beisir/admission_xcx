@@ -1,0 +1,43 @@
+<view class='bannerBox'>
+    <view class='bSearchBox'>
+        <icon></icon>
+        <navigator url="/pages/search/search">请输入商品关键词</navigator>
+    </view>
+    <navigator class="scrollImg"
+        open-type="switchTab"
+        url="/pages/setup_shop/setup_shop">
+        <image src='http://style.org.hc360.com/images/admission_xcx/bannerImg.png'></image>
+    </navigator>
+</view>
+<view class='tsIndustryBox'>
+    <view class='industryTit'>
+        <view class='titTop'>特色
+            <text>行业</text>
+        </view>
+        <view class='titBot'>INDUSTRY</view>
+    </view>
+</view>
+<view class='navBox2'>
+    <block wx:for="{{industry}}" wx:key="{{index}}">
+        <navigator class='navList' url="/pages/s_area/s_area?w={{item.title}}&active=0">
+            <icon class='navIco{{index + 1}}'></icon>
+            <view class='navTit'>{{item.title}}</view>
+            <text>{{item.text}}</text>
+        </navigator>
+    </block>
+</view>
+<view class='tsIndustryBox'>
+    <view class='industryTit'>
+        <view class='titTop'>供应商
+            <text>推荐</text>
+        </view>
+        <view class='titBot'>RECOMMEND</view>
+    </view>
+</view>
+<view class='companyCon2'>
+    <block wx:for="{{supplier}}" wx:key="{{index}}">
+        <navigator class='companyBg{{index + 1}}' url="/pages/index/index?pid={{item.url}}">
+            <text>{{item.title}}</text>
+        </navigator>
+    </block>
+</view>
